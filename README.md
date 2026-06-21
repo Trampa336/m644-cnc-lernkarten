@@ -24,7 +24,7 @@ Aktuell **79 Karten** in drei Formaten: offene Prüfungsfragen, Multiple-Choice 
 ## Benutzung
 
 ### Online (GitHub Pages)
-👉 *(Link nach Aktivierung der GitHub Pages hier eintragen)*
+👉 **https://trampa336.github.io/m644-cnc-lernkarten/**
 
 ### Lokal
 Einfach `index.html` im Browser öffnen – oder, damit die Kartendaten (`fetch`) geladen werden,
