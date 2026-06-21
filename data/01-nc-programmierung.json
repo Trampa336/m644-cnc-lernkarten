@@ -1,0 +1,281 @@
+[
+  {
+    "id": "nc-001",
+    "topic": "NC-Programmierung",
+    "subtopic": "Einleitung",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Wofür steht CNC?",
+    "answer": "Computerized Numerical Control – computerisierte numerische Steuerung. Bezeichnet die Automatisierung von Werkzeugmaschinen mit Hilfe von Computern und programmierbaren Steuerungssystemen."
+  },
+  {
+    "id": "nc-002",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmiersysteme",
+    "priority": "A",
+    "type": "open",
+    "question": "Erläutern Sie die drei Programmiersysteme der NC-Programmierung mit je einem Vor- und Nachteil.",
+    "answer": "1. Manuelle NC-Programmierung: direktes Schreiben in G-Code. + volle Kontrolle, − zeitaufwändig und fehleranfällig.\n2. CNC-Steuerung (maschineninterne Programmierung mit Dialogsystemen). + benutzerfreundlich, auch für Einsteiger, − weniger flexibel als G-Code/CAM.\n3. CAM-System: Programmerstellung in CAM-Software. + komplexe Geometrien effizient programmierbar, − teure Software, Schulung erforderlich."
+  },
+  {
+    "id": "nc-003",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmiersysteme",
+    "priority": "A",
+    "type": "mc",
+    "question": "Welches Programmiersystem eignet sich am besten für komplexe Geometrien?",
+    "options": ["Manuelle G-Code-Programmierung", "Dialogprogrammierung an der CNC-Steuerung", "CAM-System", "Teach-in-Verfahren"],
+    "answerIndex": 2,
+    "answer": "Das CAM-System – komplexe Geometrien können effizient programmiert werden (Nachteil: teure Software und Schulung erforderlich)."
+  },
+  {
+    "id": "nc-004",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmiersysteme",
+    "priority": "A",
+    "type": "mc",
+    "question": "Was ist der wesentliche Vorteil der manuellen NC-Programmierung?",
+    "options": ["Besonders benutzerfreundlich", "Volle Kontrolle über den Bearbeitungsprozess", "Ideal für komplexe Freiformflächen", "Keine Kenntnisse nötig"],
+    "answerIndex": 1,
+    "answer": "Volle Kontrolle über den Bearbeitungsprozess. Nachteil: zeitaufwändig und fehleranfällig."
+  },
+  {
+    "id": "nc-005",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmaufbau",
+    "priority": "B",
+    "type": "flashcard",
+    "question": "Welche Norm legt Syntax und Aufbau von NC-Programmen fest?",
+    "answer": "DIN 66025 / ISO 6983."
+  },
+  {
+    "id": "nc-006",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmaufbau",
+    "priority": "B",
+    "type": "open",
+    "question": "Aus welchen Bausteinen ist ein NC-Programm aufgebaut?",
+    "answer": "Ein NC-Programm besteht aus einer beliebigen Anzahl von Sätzen, die den Arbeitsablauf schrittweise beschreiben. Jeder Satz entspricht einer Zeile und besteht aus Adressen mit Zahlenwerten. Die Sätze werden fortlaufend nummeriert (erleichtert Suche, dient als Sprungmarke). Die Adresse bestimmt, welche Funktionsgruppe der Maschine angesprochen wird."
+  },
+  {
+    "id": "nc-007",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmaufbau",
+    "priority": "B",
+    "type": "flashcard",
+    "question": "Unterschied zwischen Hauptsatz und Nebensatz?",
+    "answer": "Hauptsätze enthalten alle Adressen mit den aktuellen Zahlenwerten. Nebensätze enthalten nur die Informationen, deren Werte sich gegenüber dem vorhergehenden Satz ändern."
+  },
+  {
+    "id": "nc-008",
+    "topic": "NC-Programmierung",
+    "subtopic": "Programmaufbau",
+    "priority": "A",
+    "type": "open",
+    "question": "Nennen Sie die Arten von Adressen in einem NC-Programm.",
+    "answer": "− Weginformationen: Achsadressen X, Y, Z, A, B, C, W …\n− Technologische Informationen: Vorschub (F), Spindeldrehzahl (S), Werkzeug (T).\n− Schaltfunktionen: Werkzeugauswahl (T), Schalttischstellungen/Kühlmittel (M).\n− Fahranweisungen (G): Bewegungsart, Ebenenauswahl.\n− Korrekturaufrufe: Werkzeuglängen-/Radiuskorrektur, Nullpunktverschiebung.\n− Zyklen-/Unterprogrammaufrufe (P, Q)."
+  },
+  {
+    "id": "nc-009",
+    "topic": "NC-Programmierung",
+    "subtopic": "Schaltbefehle",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Was steuern Schaltbefehle (M-Befehle)?",
+    "answer": "Verschiedene Maschinenfunktionen, z. B. Starten/Stoppen der Spindel, Ein-/Ausschalten der Kühlung, Werkzeugwechsel."
+  },
+  {
+    "id": "nc-010",
+    "topic": "NC-Programmierung",
+    "subtopic": "Maschinenbefehle",
+    "priority": "A",
+    "type": "mc",
+    "question": "Welche Adresse steht für die Spindeldrehzahl?",
+    "options": ["S", "F", "T", "G"],
+    "answerIndex": 0,
+    "answer": "S (Spindle Speed). F = Vorschub, T = Werkzeugauswahl, G = Wegbedingung."
+  },
+  {
+    "id": "nc-011",
+    "topic": "NC-Programmierung",
+    "subtopic": "Maschinenbefehle",
+    "priority": "A",
+    "type": "mc",
+    "question": "Welche Adresse steht für die Vorschubgeschwindigkeit?",
+    "options": ["S", "F", "T", "M"],
+    "answerIndex": 1,
+    "answer": "F (Vorschub). Beispiel: G95 F0.15 → 0,15 mm pro Umdrehung."
+  },
+  {
+    "id": "nc-012",
+    "topic": "NC-Programmierung",
+    "subtopic": "Maschinenbefehle",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Wofür steht die Adresse T?",
+    "answer": "Für die Werkzeugauswahl (Tool-No). Beispiel: N140 T17 M06 → Werkzeug 17 in die Spindel wechseln."
+  },
+  {
+    "id": "nc-013",
+    "topic": "NC-Programmierung",
+    "subtopic": "Wegbefehle: Absolut-/Relativmaß",
+    "priority": "A",
+    "type": "open",
+    "question": "Erklären Sie den Unterschied zwischen Absolut- und Relativmaßangabe und nennen Sie die zugehörigen G-Befehle.",
+    "answer": "Absolutmaß (G90): gibt die Entfernung einer Position zum Programmnullpunkt an.\nRelativmaß / Kettenmaß (G91): definiert die Wegdifferenz zur vorhergehenden Position.\nMit G90/G91 lässt sich beliebig umschalten, ohne den Programmnullpunkt zu verlieren."
+  },
+  {
+    "id": "nc-014",
+    "topic": "NC-Programmierung",
+    "subtopic": "Wegbefehle: Absolut-/Relativmaß",
+    "priority": "A",
+    "type": "mc",
+    "question": "Welcher G-Befehl aktiviert die Absolutmaßeingabe?",
+    "options": ["G90", "G91", "G40", "G54"],
+    "answerIndex": 0,
+    "answer": "G90 = Absolutmaß. G91 = Relativ-/Kettenmaß."
+  },
+  {
+    "id": "nc-015",
+    "topic": "NC-Programmierung",
+    "subtopic": "Wegbefehle: Absolut-/Relativmaß",
+    "priority": "B",
+    "type": "open",
+    "question": "Nennen Sie je einen Vorteil der Absolut- und der Relativmaßprogrammierung.",
+    "answer": "Absolutmaß: Eine nachträgliche Änderung einer Position beeinflusst nicht alle anderen; Wiedereintritt in ein unterbrochenes Programm ist einfacher.\nRelativmaß: Die Summe aller X- bzw. Y-Maße muss bei Rückkehr zur Startposition Null sein → einfache Kontrolle auf Programmierfehler; Unterprogramme (Bohrbilder, Einstiche, Fräszyklen) lassen sich leicht kopieren und versetzen."
+  },
+  {
+    "id": "nc-016",
+    "topic": "NC-Programmierung",
+    "subtopic": "Wegbefehle: G-Funktionen",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Was legen G-Funktionen (Wegbedingungen) fest?",
+    "answer": "Nach welchem Rechenprogramm die nachfolgenden Weginformationen in der Steuerung verarbeitet werden: Verfahrart (Gerade, Kreis), Wegkorrekturen (z. B. Werkzeugradius), Ebenenauswahl, Definition von Maßen."
+  },
+  {
+    "id": "nc-017",
+    "topic": "NC-Programmierung",
+    "subtopic": "Zyklen",
+    "priority": "A",
+    "type": "open",
+    "question": "Was sind Zyklen und wozu dienen sie? Nennen Sie Beispiele.",
+    "answer": "Zyklen sind für häufig wiederkehrende Arbeitsvorgänge fest vorprogrammierte Unterprogramme. Sie vereinfachen die Programmierung und reduzieren die Programmlänge.\nBeispiele: Bohrzyklen (Bohren, Reiben, Senken, Gewindebohren), Fräszyklen (Nuten-, Taschenfräsen, Gewindefräsen), Drehzyklen (Gewindedrehen, Freistiche)."
+  },
+  {
+    "id": "nc-018",
+    "topic": "NC-Programmierung",
+    "subtopic": "Zyklen",
+    "priority": "B",
+    "type": "mc",
+    "question": "Welcher der folgenden Codes ist ein typischer Bohrzyklus?",
+    "options": ["G81", "G90", "G41", "M03"],
+    "answerIndex": 0,
+    "answer": "G81 ist ein typischer Bohrzyklus. G90 = Absolutmaß, G41 = Radiuskorrektur links, M03 = Spindel ein (Rechtslauf)."
+  },
+  {
+    "id": "nc-019",
+    "topic": "NC-Programmierung",
+    "subtopic": "Werkzeugkorrektur",
+    "priority": "A",
+    "type": "open",
+    "question": "Was ist die Werkzeugkorrektur und warum ist sie notwendig?",
+    "answer": "Die Werkzeugwege werden abhängig von der jeweiligen Werkzeuggeometrie so gesteuert, dass mit jedem Werkzeug die programmierte Kontur hergestellt wird. Dazu müssen die Werkzeugdaten im Werkzeug-Korrekturspeicher eingetragen sein. Die Steuerung holt sich während der Programmverarbeitung die Korrekturdaten und korrigiert die Werkzeugbahn individuell – auch zum Ausgleich von Verschleiß."
+  },
+  {
+    "id": "nc-020",
+    "topic": "NC-Programmierung",
+    "subtopic": "Werkzeugkorrektur",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Was gleicht die Werkzeuglängenkorrektur aus?",
+    "answer": "Die Längenunterschiede zwischen den eingesetzten Werkzeugen. Werkzeuglänge = Abstand zwischen Werkzeugträgerbezugspunkt und Werkzeugspitze."
+  },
+  {
+    "id": "nc-021",
+    "topic": "NC-Programmierung",
+    "subtopic": "Werkzeugkorrektur",
+    "priority": "A",
+    "type": "open",
+    "question": "Erläutern Sie die Fräserradiuskorrektur.",
+    "answer": "Kontur und Werkzeugweg sind nicht identisch: Der Fräser- bzw. Schneidenmittelpunkt muss auf einer konturparallelen Bahn (Äquidistante) zur Kontur fahren. G41 = Fräswerkzeug links der Kontur, G42 = rechts der Kontur, G40 = Korrektur aus."
+  },
+  {
+    "id": "nc-022",
+    "topic": "NC-Programmierung",
+    "subtopic": "Werkzeugkorrektur",
+    "priority": "A",
+    "type": "mc",
+    "question": "Womit wird die Fräserradiuskorrektur 'links von der Kontur' aktiviert?",
+    "options": ["G40", "G41", "G42", "G90"],
+    "answerIndex": 1,
+    "answer": "G41 = Fräswerkzeug links der Werkstückkontur. G42 = rechts, G40 = Korrektur aus."
+  },
+  {
+    "id": "nc-023",
+    "topic": "NC-Programmierung",
+    "subtopic": "Werkzeugkorrektur",
+    "priority": "B",
+    "type": "open",
+    "question": "Erläutern Sie die Schneidenradiuskorrektur beim Drehen.",
+    "answer": "Durch den Schneidenradius (Eckenradius) am Drehmeißel entstehen ohne äquidistante Bahnkorrektur Formfehler bzw. Konturverzerrungen – besonders bei Kegel- und Radiendrehen. Wird die Bahn des Punktes P programmiert, laufen die formgebenden Tangenten der Schneide nicht durch P. Korrektur über eine Äquidistante mit automatischem Übergangskreis."
+  },
+  {
+    "id": "nc-024",
+    "topic": "NC-Programmierung",
+    "subtopic": "Bezugspunkte: Koordinatensysteme",
+    "priority": "A",
+    "type": "open",
+    "question": "Erklären Sie den Unterschied zwischen Maschinenkoordinatensystem (MKS) und Werkstückkoordinatensystem (WKS).",
+    "answer": "MKS: vom Maschinenhersteller definiert und nicht veränderbar.\nWKS: wird vom Programmierer oder Maschinenbediener festgelegt.",
+    "image": "img/koordinatensysteme.png"
+  },
+  {
+    "id": "nc-025",
+    "topic": "NC-Programmierung",
+    "subtopic": "Bezugspunkte: Maschinennullpunkt",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Wo liegt der Maschinennullpunkt (M)?",
+    "answer": "Vom Maschinenhersteller absolut und unveränderlich im Ursprung des Maschinenkoordinatensystems festgelegt. Bei Drehmaschinen häufig am Ende der Hauptspindel (Futteranschlag), bei Fräsmaschinen an der linken vorderen Oberseite des Hauptschlittens."
+  },
+  {
+    "id": "nc-026",
+    "topic": "NC-Programmierung",
+    "subtopic": "Bezugspunkte: Werkstücknullpunkt",
+    "priority": "A",
+    "type": "flashcard",
+    "question": "Was ist der Werkstücknullpunkt (W)?",
+    "answer": "Ein wählbarer Ursprungspunkt auf dem Werkstück (bzw. Rohteil). Er kann an der Maschine eingerichtet werden, wird in Korrekturregistern hinterlegt und mit den zugehörigen G-Befehlen aufgerufen.",
+    "image": "img/bezugspunkte.png"
+  },
+  {
+    "id": "nc-027",
+    "topic": "NC-Programmierung",
+    "subtopic": "Bezugspunkte",
+    "priority": "A",
+    "type": "mc",
+    "question": "Wer legt den Werkstücknullpunkt fest?",
+    "options": ["Der Maschinenhersteller", "Der Programmierer bzw. Maschinenbediener", "Der Steuerungshersteller", "Die Norm DIN 66025"],
+    "answerIndex": 1,
+    "answer": "Der Programmierer bzw. Maschinenbediener (im Gegensatz zum Maschinennullpunkt, den der Hersteller festlegt)."
+  },
+  {
+    "id": "nc-028",
+    "topic": "NC-Programmierung",
+    "subtopic": "Bezugspunkte: Werkzeugträgerbezugspunkt",
+    "priority": "B",
+    "type": "flashcard",
+    "question": "Was ist der Werkzeugträgerbezugspunkt (T)?",
+    "answer": "Ein Punkt an der Werkzeughalteraufnahme, wichtig für das Einrichten mit voreingestellten Werkzeugen. Durch Eingabe der Werkzeuglängen berechnet die Steuerung den Abstand der Werkzeugspitze zum Werkzeugträgerbezugspunkt (Längenausgleich)."
+  },
+  {
+    "id": "nc-029",
+    "topic": "NC-Programmierung",
+    "subtopic": "Bezugspunkte: Nullpunktverschiebung",
+    "priority": "B",
+    "type": "open",
+    "question": "Was bewirkt die Nullpunktverschiebung?",
+    "answer": "Die Differenz zwischen Maschinennullpunkt und Werkstücknullpunkt wird flexibel in eine Nullpunktverschiebung eingetragen. Mit ihrer Aktivierung wird das Koordinatensystem automatisch an die Werkstückkoordinaten angepasst. Das erleichtert die NC-Programmerstellung (keine Berücksichtigung der Maschinenkoordinaten). Bei unterschiedlichen Spannmitteln können mehrere Nullpunktverschiebungen sinnvoll sein."
+  }
+]
