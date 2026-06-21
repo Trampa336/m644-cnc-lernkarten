@@ -19,6 +19,44 @@ let index = 0;          // Position im deck
 let revealed = false;   // Antwort sichtbar?
 let status = loadStatus(); // { cardId: "sicher" | "nicht" }
 
+// ---------- Markup (leichtes Markdown für Antworten) ----------
+// Unterstützt **fett**, Aufzählungen (Zeilen mit "- "), nummerierte Listen
+// ("1. "), Leerzeilen als Absatztrenner.
+function escapeHtml(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function inlineFmt(s) {
+  return escapeHtml(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+function renderMarkup(text) {
+  const lines = (text || "").split("\n");
+  let html = "", i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    if (/^\s*-\s+/.test(line)) {
+      html += "<ul>";
+      while (i < lines.length && /^\s*-\s+/.test(lines[i])) {
+        html += "<li>" + inlineFmt(lines[i].replace(/^\s*-\s+/, "")) + "</li>";
+        i++;
+      }
+      html += "</ul>";
+    } else if (/^\s*\d+\.\s+/.test(line)) {
+      html += "<ol>";
+      while (i < lines.length && /^\s*\d+\.\s+/.test(lines[i])) {
+        html += "<li>" + inlineFmt(lines[i].replace(/^\s*\d+\.\s+/, "")) + "</li>";
+        i++;
+      }
+      html += "</ol>";
+    } else if (line.trim() === "") {
+      i++;
+    } else {
+      html += "<p>" + inlineFmt(line) + "</p>";
+      i++;
+    }
+  }
+  return html;
+}
+
 // ---------- Persistenz ----------
 function loadStatus() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
@@ -135,7 +173,7 @@ function render() {
   // Antwort verstecken
   const ans = document.getElementById("card-answer");
   ans.hidden = true;
-  document.getElementById("card-answer-text").textContent = card.answer || "";
+  document.getElementById("card-answer-text").innerHTML = renderMarkup(card.answer || "");
   const img = document.getElementById("card-answer-img");
   if (card.image) { img.src = card.image; img.hidden = false; }
   else { img.hidden = true; img.removeAttribute("src"); }

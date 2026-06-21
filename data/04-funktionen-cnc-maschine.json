@@ -6,7 +6,7 @@
     "priority": "A",
     "type": "open",
     "question": "Was ist der Lageregelkreis und wie funktioniert er?",
-    "answer": "Der Lageregelkreis ist ein geschlossener Wirkungskreis (Verbindung von Vorschubantrieb und Positionsmessung). Die Lage/Position des Maschinenschlittens wird kontinuierlich erfasst und mit dem Lagesollwert der Steuerung verglichen. Die Differenz (Lageregelabweichung) wird vom Lageregler verstärkt und als Steuersignal an den Achsantrieb ausgegeben. Die ständige Rückmeldung sorgt für eine fehlerfreie Bewegung.",
+    "answer": "Ein **geschlossener Wirkungskreis** (Verbindung von **Vorschubantrieb** und **Positionsmessung**).\n\n1. Die **Ist-Position** des Maschinenschlittens wird **kontinuierlich erfasst**.\n2. Vergleich mit dem **Lagesollwert** der Steuerung.\n3. Die Differenz (**Lageregelabweichung**) wird vom **Lageregler verstärkt**.\n4. Ausgabe als **Steuersignal** an den Achsantrieb.\n\n→ ständige Rückmeldung sorgt für **fehlerfreie Bewegung**.",
     "image": "img/lageregelkreis.png"
   },
   {
@@ -16,7 +16,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was benötigt jede CNC-Achse aufgrund der Lageregelung?",
-    "answer": "Ein elektronisch auswertbares Wegmesssystem (möglichst hohe Genauigkeit und Wiederholgenauigkeit) und einen steuer- bzw. regelbaren Antrieb (kleine bewegte Massen, steife Elemente, geringe Reibung/Spiel)."
+    "answer": "- Ein **elektronisch auswertbares Wegmesssystem** (hohe Genauigkeit und Wiederholgenauigkeit).\n- Einen **steuer- bzw. regelbaren Antrieb** (kleine bewegte Massen, steife Elemente, geringe Reibung/Spiel)."
   },
   {
     "id": "fn-003",
@@ -25,7 +25,7 @@
     "priority": "A",
     "type": "open",
     "question": "Erklären Sie den Unterschied zwischen direkter und indirekter Positionsmessung (Closed/Semi-Closed Loop).",
-    "answer": "Indirekt (Semi-Closed Loop): Die Antriebsposition wird aus der Steigung des Kugelgewindetriebs in Verbindung mit einem Drehgeber ermittelt. Eine Erwärmung beeinflusst die Messung und damit die Werkstückqualität.\nDirekt (Closed Loop): Ein Längenmessgerät (Längenmaßstab) ermittelt die Schlittenposition direkt. Spiel und Ungenauigkeiten der Übertragungselemente haben keinen Einfluss; die Genauigkeit hängt nur vom Längenmessgerät und seinem Einbauort ab."
+    "answer": "- **Indirekt (Semi-Closed Loop):** Position aus der **Steigung des Kugelgewindetriebs + Drehgeber**. **Erwärmung beeinflusst** die Messung und damit die Werkstückqualität.\n- **Direkt (Closed Loop):** ein **Längenmessgerät (Längenmaßstab)** erfasst die Schlittenposition **direkt**. **Spiel/Ungenauigkeiten** der Übertragungselemente haben **keinen Einfluss**; Genauigkeit hängt nur vom Messgerät ab."
   },
   {
     "id": "fn-004",
@@ -36,7 +36,7 @@
     "question": "Welche Positionsmessung ist unempfindlich gegenüber Spiel in den Übertragungselementen?",
     "options": ["Semi-Closed Loop (indirekt)", "Closed Loop (direkt)", "Beide gleichermaßen", "Keine von beiden"],
     "answerIndex": 1,
-    "answer": "Die direkte Positionsmessung (Closed Loop) mit Längenmaßstab – Spiel und Ungenauigkeiten der Übertragungselemente wirken sich nicht auf die Positionserfassung aus."
+    "answer": "Die **direkte Positionsmessung (Closed Loop)** mit **Längenmaßstab**.\n\nSpiel und Ungenauigkeiten der Übertragungselemente wirken sich **nicht** auf die Positionserfassung aus."
   },
   {
     "id": "fn-005",
@@ -45,7 +45,7 @@
     "priority": "B",
     "type": "open",
     "question": "Nennen Sie Gründe für Positionsabweichungen an CNC-Maschinen.",
-    "answer": "Auftretende Kräfte (Beschleunigungskräfte, Schnittkräfte, Reibungskräfte) und Erwärmung verschieben die tatsächliche Achsschlittenposition gegenüber der mit Vorschubspindel und Drehgeber erfassten Position. Folgen sind u. a. Gestelldeformationen und Achsdrift. Steifigkeit und Erwärmung hängen von Vorspannung der Kugelgewindemutter und Festlager ab."
+    "answer": "**Auftretende Kräfte** verschieben die Achsposition:\n- **Beschleunigungskräfte**\n- **Schnittkräfte**\n- **Reibungskräfte**\n\n**Erwärmung** (abhängig von Vorspannung der Kugelgewindemutter und Festlager).\n\n*Folgen:* **Gestelldeformationen** und **Achsdrift**."
   },
   {
     "id": "fn-006",
@@ -54,7 +54,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was ist die 'Lose' und wie wird sie kompensiert?",
-    "answer": "Die Lose ist das mechanische Umkehrspiel zwischen einem bewegten Maschinenteil und seinem Antrieb (z. B. Kugelrollspindel). Sie wird gemessen, indem pro NC-Achse ein Punkt aus zwei Richtungen angefahren wird; der Positionsunterschied wird in die Parameter der CNC-Maschine eingetragen (Losekompensation)."
+    "answer": "Die **Lose** ist das **mechanische Umkehrspiel** zwischen einem bewegten Maschinenteil und seinem Antrieb (z. B. Kugelrollspindel).\n\n- **Messung:** pro NC-Achse einen Punkt **aus zwei Richtungen** anfahren.\n- Der **Positionsunterschied** wird in die **Maschinenparameter** eingetragen (Losekompensation)."
   },
   {
     "id": "fn-007",
@@ -63,7 +63,7 @@
     "priority": "B",
     "type": "open",
     "question": "Was versteht man unter Volumenkompensation (VCS)?",
-    "answer": "Jede Werkzeugmaschine weist geringfügige systematische Geometriefehler im Führungssystem der Vorschubachsen auf (volumetrischer Fehler). Diese werden z. B. mit einem Laser-Interferometer vermessen, und es wird ein Kompensationsmodell (VCS-Datei) erzeugt. Die Abweichungen werden anschließend durch angepasste Verfahrwege am Tool Center Point (TCP) korrigiert."
+    "answer": "Jede Maschine weist **systematische Geometriefehler** im Führungssystem der Vorschubachsen auf (**volumetrischer Fehler**).\n\n- Vermessung z. B. mit **Laser-Interferometer** → Erstellung eines **Kompensationsmodells (VCS-Datei)**.\n- Abweichungen werden durch **angepasste Verfahrwege** am **Tool Center Point (TCP)** korrigiert."
   },
   {
     "id": "fn-008",
@@ -72,7 +72,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was sind Schaltfunktionen (M)?",
-    "answer": "Alle Funktionen der CNC-Maschine, die während der Bearbeitung programmierbar ein-/ausgeschaltet werden sollen (z. B. Kühlmittel, Spindel). Sie ergänzen die Weginformationen (Bewegungen) und die technologischen Daten (T, D, S, F) für einen vollautomatischen Ablauf."
+    "answer": "Alle Funktionen der Maschine, die während der Bearbeitung **programmierbar ein-/ausgeschaltet** werden (z. B. **Kühlmittel, Spindel**).\n\nErgänzen die **Weginformationen** (Bewegungen) und die **technologischen Daten** (T, D, S, F) für einen vollautomatischen Ablauf."
   },
   {
     "id": "fn-009",
@@ -81,7 +81,7 @@
     "priority": "A",
     "type": "open",
     "question": "Vergleichen Sie den Werkzeugwechsel bei Dreh- und bei Fräsmaschinen.",
-    "answer": "Drehmaschinen: meist geringere Zahl erforderlicher Werkzeuge → Einsatz von Werkzeugrevolvern (zwei oder drei Revolver mit bis zu 18 Werkzeugen). Vorteile: keine zusätzlichen Wechselgreifer nötig, kurze Wechselzeiten, geringe Kollisionsgefahr.\nFräsmaschinen/Bearbeitungszentren: meist deutlich höhere Werkzeugzahl → Werkzeugmagazin mit Wechselvorrichtung; Unterscheidung nach Ketten-, Scheiben- oder Kassettenmagazinen (Scheibe = geringe, Kette = größere Werkzeuganzahl)."
+    "answer": "**Drehmaschinen:**\n- meist **wenige Werkzeuge** → **Werkzeugrevolver** (2–3 Revolver, bis 18 Werkzeuge)\n- + keine Wechselgreifer nötig, **kurze Wechselzeiten**, geringe Kollisionsgefahr\n\n**Fräsmaschinen / Bearbeitungszentren:**\n- meist **viele Werkzeuge** → **Werkzeugmagazin + Wechselvorrichtung**\n- Bauformen: **Ketten-, Scheiben- oder Kassettenmagazin** (Scheibe = wenige, Kette = viele Werkzeuge)"
   },
   {
     "id": "fn-010",
@@ -92,7 +92,7 @@
     "question": "Welches Magazin eignet sich für eine große Werkzeuganzahl?",
     "options": ["Scheibenmagazin", "Kettenmagazin", "Werkzeugrevolver", "Kassette mit einem Platz"],
     "answerIndex": 1,
-    "answer": "Das Kettenmagazin eignet sich für eine größere Werkzeuganzahl; das Scheibenmagazin für eine geringe Anzahl."
+    "answer": "Das **Kettenmagazin** – für eine **größere Werkzeuganzahl**.\n\n*Gegenstück:* das **Scheibenmagazin** für eine geringe Anzahl."
   },
   {
     "id": "fn-011",
@@ -101,7 +101,7 @@
     "priority": "A",
     "type": "open",
     "question": "Welche Vorteile bietet der automatische Werkstückwechsel und welche Systeme gibt es?",
-    "answer": "Vorteil: Nebenzeiten für Spannen und Entladen werden vermieden → höhere Produktivität und Entkopplung von der Tätigkeit des Werkers. Systeme je nach Werkstück: Arbeiten von der Stange, Pick-up-Verfahren, Wechseln durch Roboter oder Greifer, sowie Palettenwechsel (bei flexiblen Fertigungszellen/-systemen mit Palettenspeicher)."
+    "answer": "*Vorteil:* **Nebenzeiten** für Spannen/Entladen entfallen → **höhere Produktivität** und **Entkopplung vom Werker**.\n\n**Systeme:**\n- Arbeiten **von der Stange**\n- **Pick-up-Verfahren**\n- Wechseln durch **Roboter / Greifer**\n- **Palettenwechsel** (flexible Fertigungszellen/-systeme mit Palettenspeicher)"
   },
   {
     "id": "fn-012",
@@ -110,7 +110,7 @@
     "priority": "B",
     "type": "open",
     "question": "Was ist die adaptive Vorschubregelung (AFC)?",
-    "answer": "Die adaptive Vorschubregelung optimiert den Bahnvorschub abhängig von der Spindelleistung und weiteren Prozessdaten. Sie vergleicht permanent die Spindelleistung mit der Referenzleistung und passt den Vorschub während der gesamten Bearbeitung an, um die Referenzleistung zu halten. So wird stets der maximal mögliche Vorschub erreicht und die Effizienz gesteigert."
+    "answer": "Optimiert den **Bahnvorschub** abhängig von der **Spindelleistung** und weiteren Prozessdaten.\n\n- Vergleicht **permanent** die Spindelleistung mit der **Referenzleistung**.\n- Passt den **Vorschub** laufend an, um die Referenzleistung zu halten.\n\n→ stets **maximal möglicher Vorschub** und **höhere Effizienz**."
   },
   {
     "id": "fn-013",
@@ -119,7 +119,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was ist Simultandrehen (Balance Cutting)?",
-    "answer": "Ein CNC-Dreh-Bearbeitungsvorgang, bei dem zwei Revolver gleichzeitig zum Einsatz kommen. Vorteile: geringere Fertigungszeit durch höheres Zerspanvolumen sowie geringere Schwingungen und damit größere mögliche Werkstücklängen (Schnittkräfte heben sich teilweise auf)."
+    "answer": "Ein **CNC-Dreh-Vorgang**, bei dem **zwei Revolver gleichzeitig** zum Einsatz kommen.\n\n**Vorteile:**\n- **geringere Fertigungszeit** (höheres Zerspanvolumen)\n- **geringere Schwingungen** → größere mögliche Werkstücklängen (Schnittkräfte heben sich teilweise auf)"
   },
   {
     "id": "fn-014",
@@ -128,7 +128,7 @@
     "priority": "A",
     "type": "open",
     "question": "Wozu dient die Betriebsfunktion 'Achsen sperren'?",
-    "answer": "Zum gezielten Stillsetzen einzelner oder aller CNC-Achsen, um ein NC-Programm ohne Bewegung dieser Achsen im Schnelldurchlauf auf Programmfehler zu testen. Wahlweise und zur Zeitersparnis können auch Werkzeugwechsel, Palettenwechsel, Kühlmittel und die Hauptspindel gesperrt werden."
+    "answer": "Zum **gezielten Stillsetzen** einzelner/aller CNC-Achsen, um ein NC-Programm **ohne Bewegung** dieser Achsen im **Schnelldurchlauf auf Programmfehler zu testen**.\n\nWahlweise und zur Zeitersparnis auch **Werkzeugwechsel, Palettenwechsel, Kühlmittel und Hauptspindel** sperrbar."
   },
   {
     "id": "fn-015",
@@ -137,7 +137,7 @@
     "priority": "A",
     "type": "open",
     "question": "Was sind Schutzbereiche und welche Arten gibt es?",
-    "answer": "Mit Schutzbereichen lassen sich Elemente an der Maschine, die Ausrüstung sowie das Werkstück vor falschen Bewegungen schützen. Arten:\n− Werkzeugbezogene Schutzbereiche: für Teile, die zum Werkzeug gehören (Werkzeug, Werkzeugträger).\n− Werkstückbezogene Schutzbereiche: für Teile, die zum Werkstück gehören (Werkstück, Aufspanntisch, Spannpratzen, Spindelfutter, Reitstock).",
+    "answer": "Bereiche zum **Schutz von Maschinenelementen, Ausrüstung und Werkstück** vor falschen Bewegungen.\n\n**Arten:**\n- **Werkzeugbezogene Schutzbereiche:** für Teile, die zum **Werkzeug** gehören (Werkzeug, Werkzeugträger).\n- **Werkstückbezogene Schutzbereiche:** für Teile, die zum **Werkstück** gehören (Werkstück, Aufspanntisch, Spannpratzen, Spindelfutter, Reitstock).",
     "image": "img/schutzbereiche.png"
   },
   {
@@ -147,7 +147,7 @@
     "priority": "A",
     "type": "open",
     "question": "Was leistet die dynamische Kollisionsüberwachung?",
-    "answer": "Sie bildet reale Maschinenobjekte in der Software der Steuerung ab und überwacht auf dieser Basis die Bearbeitungsprozesse laufend auf mögliche Kollisionen, um Schäden an Maschine, Werkzeug und Bauteil zu verhindern. Sie ist notwendig, weil sich Kollisionen nicht immer vollständig in der CAM-Software verhindern lassen."
+    "answer": "- Bildet **reale Maschinenobjekte** in der **Software der Steuerung** ab.\n- Überwacht auf dieser Basis die Bearbeitung **laufend auf mögliche Kollisionen**.\n- Verhindert **Schäden an Maschine, Werkzeug und Bauteil**.\n\n*Notwendig,* weil sich Kollisionen **nicht immer vollständig in der CAM-Software** verhindern lassen."
   },
   {
     "id": "fn-017",
@@ -156,7 +156,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wozu dient der dynamische Daten-Puffer-Speicher?",
-    "answer": "Für hohe Oberflächenqualität muss die Maschine das Programm schnell und ohne Vorschubschwankungen abarbeiten. Ist die Abarbeitungszeit eines Satzes kürzer als die Vorbereitungszeit des folgenden Satzes, kommt es zu Vorschubeinbrüchen. Ein ständig nachgefüllter Pufferspeicher hält genügend vorbereitete NC-Sätze bereit und verhindert das ruckelnde 'Achsen-Stottern'."
+    "answer": "Für **hohe Oberflächenqualität** muss die Maschine das Programm **schnell und ohne Vorschubschwankungen** abarbeiten.\n\n- Ist die **Abarbeitungszeit** eines Satzes kürzer als die **Vorbereitungszeit** des folgenden, kommt es zu **Vorschubeinbrüchen**.\n- Ein ständig nachgefüllter **Pufferspeicher** hält genügend **vorbereitete NC-Sätze** bereit → verhindert das ruckelnde **„Achsen-Stottern“**."
   },
   {
     "id": "fn-018",
@@ -165,7 +165,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was bedeutet Zustandsüberwachung (Condition Monitoring)?",
-    "answer": "Überwachung und Analyse eines lastabhängigen Störungs- und Zustands der CNC-Maschine. Durch permanente Überwachung und Vergleich mit Sollgrößen erhält der Betreiber frühestmögliche Kenntnis über Abweichungen; intelligente Auswertung der Sensordaten erlaubt die Prognose von Ausfällen."
+    "answer": "**Überwachung und Analyse** eines **lastabhängigen Störungs- und Zustands** der CNC-Maschine.\n\n- **Permanenter Vergleich** mit Sollgrößen → frühestmögliche Kenntnis über Abweichungen.\n- **Intelligente Auswertung** der Sensordaten → **Prognose von Ausfällen**."
   },
   {
     "id": "fn-019",
@@ -174,7 +174,7 @@
     "priority": "B",
     "type": "open",
     "question": "Was sind Messzyklen und wozu werden sie verwendet?",
-    "answer": "In der CNC abgespeicherte Ablaufzyklen zum automatischen Messen von Bohrungen, Nuten oder Flächen mit einem schaltenden Messtaster. Durch den Messvorgang kann während der Abarbeitung des NC-Programms die Genauigkeit des Werkstücks geprüft werden; eine entsprechende Korrektur im NC-Programm oder für das Werkzeug ist möglich (erfordert spezielle Kalibrier- und Messzyklen)."
+    "answer": "In der CNC abgespeicherte **Ablaufzyklen zum automatischen Messen** von Bohrungen, Nuten oder Flächen mit einem **schaltenden Messtaster**.\n\n- Prüft **während der Abarbeitung** die **Genauigkeit des Werkstücks**.\n- **Korrektur** im NC-Programm oder für das Werkzeug möglich.\n- Erfordert spezielle **Kalibrier- und Messzyklen**."
   },
   {
     "id": "fn-020",
@@ -183,6 +183,6 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Welche Möglichkeiten bietet der Fernzugriff auf eine CNC-Maschine?",
-    "answer": "Fernbedienen und Beobachten des Maschinen-HMI, Übertragen von Dateien, Konferenzschaltung (Teilnahme mehrerer Service-Techniker) sowie dokumentarischer Nachweis der Aktionen."
+    "answer": "- **Fernbedienen und Beobachten** des Maschinen-HMI\n- **Übertragen von Dateien**\n- **Konferenzschaltung** (mehrere Service-Techniker)\n- **dokumentarischer Nachweis** der Aktionen"
   }
 ]

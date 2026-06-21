@@ -6,7 +6,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wofür steht CAM?",
-    "answer": "Computer-Aided Manufacturing – computerunterstützte Fertigung. Anwendung von Computertechnologie und spezieller Software, um den Fertigungsprozess von Werkstücken zu automatisieren und zu optimieren (von der Konstruktionsbeschreibung bis zur Fertigung)."
+    "answer": "**Computer-Aided Manufacturing** – computerunterstützte Fertigung.\n\nAnwendung von Software, um den **Fertigungsprozess** von Werkstücken zu **automatisieren und zu optimieren** (von der Konstruktionsbeschreibung bis zur Fertigung)."
   },
   {
     "id": "cam-002",
@@ -15,7 +15,7 @@
     "priority": "A",
     "type": "open",
     "question": "Erklären Sie den Unterschied zwischen CAD und CAE.",
-    "answer": "CAD (Computer-Aided Design): Erstellen, Bearbeiten und Dokumentieren geometrischer Modelle eines Bauteils bzw. einer Baugruppe.\nCAE (Computer-Aided Engineering): Analyse und Simulation von (meist aus CAD stammenden) Modellen, um das Verhalten eines Produkts vor der eigentlichen Fertigung zu testen."
+    "answer": "- **CAD (Computer-Aided Design):** Erstellen, Bearbeiten und Dokumentieren **geometrischer Modelle** eines Bauteils / einer Baugruppe.\n- **CAE (Computer-Aided Engineering):** **Analyse und Simulation** von (meist aus CAD stammenden) Modellen, um das **Produktverhalten vor der Fertigung** zu testen."
   },
   {
     "id": "cam-003",
@@ -26,7 +26,7 @@
     "question": "Was ist eine zentrale Aufgabe eines CAM-Systems?",
     "options": ["Geometrische Modellierung des Bauteils", "Generierung des NC-Programms aus dem CAD-Modell", "Belastungsanalyse mittels FEM", "Verwaltung aller Produktdaten im Lebenszyklus"],
     "answerIndex": 1,
-    "answer": "Die Generierung des NC-Programms aus dem CAD-Modell. Weitere Aufgaben: Optimierung der Bearbeitungsstrategien, Minimierung von Programmier-/Rüstzeiten, Simulation der Verfahrwege und Kollisionsprüfung, Organisation der Werkzeug- und NC-Daten."
+    "answer": "Die **Generierung des NC-Programms aus dem CAD-Modell.**\n\n**Weitere Aufgaben:**\n- Optimierung der **Bearbeitungsstrategien**\n- Minimierung von **Programmier- / Rüstzeiten**\n- **Simulation** der Verfahrwege und **Kollisionsprüfung**\n- Organisation der **Werkzeug- und NC-Daten**"
   },
   {
     "id": "cam-004",
@@ -35,7 +35,7 @@
     "priority": "A",
     "type": "open",
     "question": "Beschreiben Sie die Prozesskette der CAM-Programmierung vom CAD-Modell bis zum Fertigteil.",
-    "answer": "1. CAD-Modell\n2. Spannplanung\n3. Technologie (Planung der Fertigungsschritte)\n4. Fertigungssimulation\n5. Übertragung des NC-Programms an die Maschine\n→ „von der Virtualität zur Realität“.",
+    "answer": "1. **CAD-Modell**\n2. **Spannplanung**\n3. **Technologie** (Planung der Fertigungsschritte)\n4. **Fertigungssimulation**\n5. **Übertragung des NC-Programms** an die Maschine\n\n→ *„von der Virtualität zur Realität“.*",
     "image": "img/cam-prozesskette.png"
   },
   {
@@ -45,7 +45,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was umfasst die Spannplanung?",
-    "answer": "Die Planung und Definition, wie und womit ein Werkstück während der Bearbeitung gespannt/fixiert wird: Auswahl der Spannmittel (Schraubstock, Vakuumplatten, Prismen, Sondervorrichtungen), Lage und Orientierung des Werkstücks sowie Aufspannstrategie / Anzahl der Spannungen."
+    "answer": "Planung/Definition, **wie und womit ein Werkstück gespannt/fixiert** wird:\n\n- Auswahl der **Spannmittel** (Schraubstock, Vakuumplatten, Prismen, Sondervorrichtungen)\n- **Lage und Orientierung** des Werkstücks\n- **Aufspannstrategie** / Anzahl der Spannungen"
   },
   {
     "id": "cam-006",
@@ -54,7 +54,7 @@
     "priority": "A",
     "type": "open",
     "question": "Was beschreibt die Bearbeitungsstrategie in der Technologieplanung?",
-    "answer": "Den Plan, wie Material vom Rohteil abgetragen wird – welche Werkzeuge, Bearbeitungsarten und Werkzeugbahnen verwendet werden. Bestandteile: Analyse des Bauteils (Rohteil- vs. Fertigteilvergleich), Auswahl des Fertigungsverfahrens (Fräsen, Bohren, Drehen, Schleifen), Bearbeitungsart (Schruppen, Schlichten), Auswahl der Werkzeugwege, Festlegen der Schnittparameter."
+    "answer": "Den Plan, **wie Material vom Rohteil abgetragen** wird – welche Werkzeuge, Bearbeitungsarten und Werkzeugbahnen.\n\n**Bestandteile:**\n1. **Bauteilanalyse** (Rohteil- vs. Fertteilvergleich)\n2. Auswahl des **Fertigungsverfahrens** (Fräsen, Bohren, Drehen, Schleifen)\n3. **Bearbeitungsart** (Schruppen, Schlichten)\n4. Auswahl der **Werkzeugwege**\n5. Festlegen der **Schnittparameter**"
   },
   {
     "id": "cam-007",
@@ -63,7 +63,7 @@
     "priority": "B",
     "type": "open",
     "question": "Was ist ein Postprozessor und welche Aufgaben hat er?",
-    "answer": "Der Postprozessor überträgt die Bearbeitung an die Maschine, indem er die internen Werkzeugbahnen des CAM-Systems (mathematische Daten) in maschinenlesbaren NC-Code (z. B. G-Code) umwandelt – angepasst an eine bestimmte Maschine und Steuerung. Aufgaben: Übersetzung der Werkzeugwege, Formatierung des NC-Programms, maschinenspezifische Anpassungen, Einfügen von Sicherheitsbefehlen."
+    "answer": "Der **Postprozessor** überträgt die Bearbeitung an die Maschine: Er wandelt die **internen Werkzeugbahnen** des CAM-Systems in **maschinenlesbaren NC-Code (z. B. G-Code)** um – angepasst an **Maschine und Steuerung**.\n\n**Aufgaben:**\n- **Übersetzung** der Werkzeugwege\n- **Formatierung** des NC-Programms\n- **maschinenspezifische Anpassungen**\n- Einfügen von **Sicherheitsbefehlen**"
   },
   {
     "id": "cam-008",
@@ -72,7 +72,7 @@
     "priority": "A",
     "type": "open",
     "question": "Was ist die Hauptaufgabe der CNC-Fertigungssimulation?",
-    "answer": "Den gesamten Prozess der CNC-Bearbeitung in einer dreidimensionalen Grafikumgebung realitätsgetreu nachzubilden und zu visualisieren, bevor die tatsächliche Bearbeitung auf der Maschine stattfindet. Ziel: Effizienz, Genauigkeit und Sicherheit der Bearbeitung verbessern (umfassende virtuelle Umgebung / digitaler Zwilling)."
+    "answer": "Den **gesamten Prozess der CNC-Bearbeitung** in einer **3D-Grafikumgebung realitätsgetreu** nachzubilden und zu visualisieren – **bevor** die tatsächliche Bearbeitung stattfindet.\n\n*Ziel:* **Effizienz, Genauigkeit und Sicherheit** verbessern (umfassende virtuelle Umgebung / **digitaler Zwilling**)."
   },
   {
     "id": "cam-009",
@@ -81,7 +81,7 @@
     "priority": "A",
     "type": "open",
     "question": "Nennen Sie Einsatzfelder der Fertigungssimulation.",
-    "answer": "− Verifizierung von CNC-Programmen (Überprüfung der Konturen)\n− Vermeidung von Kollisionen (Werkzeug, Werkstück, Maschinenkomponenten)\n− Optimierung von Werkzeugwegen (Taktzeitreduzierung)\n− Überprüfung von Maschinenkapazitäten (räumliche Einschränkungen)\n− Schulung und Ausbildung der Bediener."
+    "answer": "- **Verifizierung** von CNC-Programmen (Konturen)\n- **Vermeidung von Kollisionen** (Werkzeug, Werkstück, Maschinenkomponenten)\n- **Optimierung von Werkzeugwegen** (Taktzeitreduzierung)\n- Überprüfung von **Maschinenkapazitäten** (räumliche Einschränkungen)\n- **Schulung und Ausbildung** der Bediener"
   },
   {
     "id": "cam-010",
@@ -90,7 +90,7 @@
     "priority": "B",
     "type": "open",
     "question": "In welche Klassen werden Werkzeuge in der Fertigungssimulation eingeteilt?",
-    "answer": "− Rotationssymmetrische Werkzeuge (Bohrer, Fräser)\n− Nicht-rotationssymmetrische Werkzeuge (Drehwerkzeuge, einschneidige Werkzeuge)\n− Kombinierte/Sonderwerkzeuge (Winkelbohrköpfe, Bohrköpfe mit mehr als einem Werkzeug).\nWerkzeuge können generiert (Eingabe geometrischer Parameter) oder zusammengesetzt (Integration von 3D-Geometrien) werden."
+    "answer": "- **Rotationssymmetrische** Werkzeuge (Bohrer, Fräser)\n- **Nicht-rotationssymmetrische** Werkzeuge (Drehwerkzeuge, einschneidige)\n- **Kombinierte / Sonderwerkzeuge** (Winkelbohrköpfe, Bohrköpfe mit mehreren Werkzeugen)\n\nWerkzeuge können **generiert** (geometrische Parameter) oder **zusammengesetzt** (3D-Geometrien) werden."
   },
   {
     "id": "cam-011",
@@ -101,7 +101,7 @@
     "question": "Welche zwei Arten der Werkzeugerstellung gibt es in der Simulation?",
     "options": ["Generierte und zusammengesetzte Werkzeuge", "Feste und variable Werkzeuge", "Direkte und indirekte Werkzeuge", "2D- und 3D-Werkzeuge"],
     "answerIndex": 0,
-    "answer": "Generierte Werkzeuge (über geometrische Parameter erzeugt, kein CAD-Wissen nötig) und zusammengesetzte Werkzeuge (aus 3D-Geometrien der Werkzeughersteller, exakte Abbildung, aber hoher Pflegeaufwand)."
+    "answer": "- **Generierte Werkzeuge:** über geometrische Parameter erzeugt, **kein CAD-Wissen** nötig.\n- **Zusammengesetzte Werkzeuge:** aus 3D-Geometrien der Hersteller, **exakte Abbildung**, aber hoher Pflegeaufwand."
   },
   {
     "id": "cam-012",
@@ -110,6 +110,6 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was prüft die automatische Kollisionserkennung in der Simulation – über Berührungen hinaus?",
-    "answer": "Komponenten des Arbeitsraums werden auf Kollisionen/Berührungen geprüft (kollidierende Teile werden farblich gekennzeichnet). Zusätzlich wird kontrolliert: Bearbeitung mit deaktivierter Kühlmittelzufuhr sowie Überschreitung maximal zulässiger Spindeldrehzahlen und Vorschübe."
+    "answer": "Komponenten des Arbeitsraums werden auf **Kollisionen / Berührungen** geprüft (kollidierende Teile werden **farblich gekennzeichnet**).\n\n**Zusätzlich kontrolliert:**\n- Bearbeitung mit **deaktivierter Kühlmittelzufuhr**\n- Überschreitung **max. zulässiger Spindeldrehzahlen und Vorschübe**"
   }
 ]

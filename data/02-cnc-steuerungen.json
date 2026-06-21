@@ -6,7 +6,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was ist die Aufgabe einer CNC-Steuerung?",
-    "answer": "Die CNC-Steuerung ist das Computersystem, das die Werkzeugmaschine steuert. Aufgaben: digitale Informationen an die Maschine übertragen, alle Fertigungsschritte steuern, Maschinen-/Werkzeugdaten und Fertigungsprogramme speichern, grafische Simulation der Fertigungsabläufe."
+    "answer": "Das **Computersystem, das die Werkzeugmaschine steuert.**\n\n**Aufgaben:**\n- digitale **Informationen** an die Maschine übertragen\n- alle **Fertigungsschritte** steuern\n- **Maschinen-/Werkzeugdaten** und Programme speichern\n- **grafische Simulation** der Fertigungsabläufe"
   },
   {
     "id": "st-002",
@@ -15,7 +15,7 @@
     "priority": "A",
     "type": "open",
     "question": "Nennen und erläutern Sie die drei grundlegenden Steuerungsarten.",
-    "answer": "Punktsteuerung: Bewegung zu einem Zielpunkt ohne Kontrolle des Weges dorthin (nur Start-/Endpunkt), Werkzeug nicht im Eingriff – z. B. Bohrmaschinen. Einfachste, günstigste Art.\nStreckensteuerung: Bewegung entlang einer Achse (linear) mit kontrollierter Geschwindigkeit, Werkzeug im Eingriff – nur eine Achse gleichzeitig.\nBahnsteuerung: gesteuerte Bewegung von zwei oder mehr Achsen gleichzeitig, ermöglicht kontinuierliche Bahnverfolgung beliebiger Konturen (2- bis 5-Achs) – Freiformflächen, höherer Aufwand/teurer.",
+    "answer": "- **Punktsteuerung:** Bewegung zu einem Zielpunkt **ohne Bahnkontrolle** (nur Start-/Endpunkt), Werkzeug **nicht im Eingriff** – z. B. Bohrmaschinen. Einfachste, günstigste Art.\n- **Streckensteuerung:** Bewegung entlang **einer Achse** mit kontrollierter Geschwindigkeit, Werkzeug **im Eingriff** – nur eine Achse gleichzeitig.\n- **Bahnsteuerung:** **gesteuerte Bewegung von ≥ 2 Achsen gleichzeitig**, beliebige Konturen (2- bis 5-Achs) – Freiformflächen, höherer Aufwand/teurer.",
     "image": "img/steuerungsarten.png"
   },
   {
@@ -27,7 +27,7 @@
     "question": "Welche Steuerungsart ist typisch für Bohrmaschinen?",
     "options": ["Punktsteuerung", "Streckensteuerung", "Bahnsteuerung", "Adaptivsteuerung"],
     "answerIndex": 0,
-    "answer": "Punktsteuerung – nur Start- und Endpunkt sind relevant, das Werkzeug ist während der Bewegung nicht im Eingriff."
+    "answer": "**Punktsteuerung** – nur Start- und Endpunkt sind relevant, das Werkzeug ist während der Bewegung **nicht im Eingriff**."
   },
   {
     "id": "st-004",
@@ -38,7 +38,7 @@
     "question": "Welche Steuerungsart ist für die Bearbeitung von Freiformflächen erforderlich?",
     "options": ["Punktsteuerung", "Streckensteuerung", "Bahnsteuerung", "Keine, das geht mit allen"],
     "answerIndex": 2,
-    "answer": "Bahnsteuerung – nur sie erlaubt die gleichzeitige, gesteuerte Bewegung mehrerer Achsen und damit kontinuierliche Konturen / Freiformflächen."
+    "answer": "**Bahnsteuerung** – nur sie erlaubt die **gleichzeitige Bewegung mehrerer Achsen** und damit kontinuierliche Konturen / Freiformflächen."
   },
   {
     "id": "st-005",
@@ -47,7 +47,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was kennzeichnet eine Adaptivsteuerung (Adaptive Control)?",
-    "answer": "Eine intelligente Steuerung, die sich an die Bearbeitungsbedingungen anpasst: Sensoren messen z. B. Schnittkraft oder Temperatur, die Steuerung passt den Vorschub an. Einsatz bei Hochleistungszerspanung; Vorteil: Prozesssicherheit/Werkzeugschutz, Nachteil: komplex, teuer, Sensorik erforderlich."
+    "answer": "Eine **intelligente Steuerung, die sich an die Bearbeitungsbedingungen anpasst.**\n\n- **Sensoren** messen z. B. **Schnittkraft** oder **Temperatur** → Vorschub wird angepasst.\n- Einsatz bei **Hochleistungszerspanung**.\n- + Prozesssicherheit / Werkzeugschutz · − komplex, teuer, Sensorik nötig"
   },
   {
     "id": "st-006",
@@ -56,7 +56,7 @@
     "priority": "A",
     "type": "open",
     "question": "Beschreiben Sie den prinzipiellen Aufbau einer NC-Steuerung.",
-    "answer": "Der Eingang der Daten erfolgt über Bedienpult/Anzeige oder das Anwenderprogramm (bzw. eine Datenschnittstelle). Ein Interpreter wandelt die Eingangsdaten in entsprechende Funktionen um: Bewegungsfunktionen (→ Lageregler) und Schaltfunktionen (→ Schalteingänge/-ausgänge). Die CNC-Steuerung besteht aus Hardware- und Softwarekomponenten.",
+    "answer": "- **Dateneingang** über Bedienpult/Anzeige oder Anwenderprogramm (bzw. Datenschnittstelle).\n- Ein **Interpreter** wandelt die Eingangsdaten in Funktionen um:\n- → **Bewegungsfunktionen** (zum **Lageregler**)\n- → **Schaltfunktionen** (zu **Schalteingängen/-ausgängen**)\n\nDie Steuerung besteht aus **Hardware- und Softwarekomponenten**.",
     "image": "img/aufbau-nc-steuerung.png"
   },
   {
@@ -66,7 +66,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was versteht man unter HMI bei einer CNC-Steuerung?",
-    "answer": "HMI (Human Machine Interface) ist die frei gestaltbare Mensch-Maschine-Schnittstelle (durch Maschinenhersteller oder Endanwender) zur Visualisierung der Daten und Kommunikation mit der Maschine. Großes Alleinstellungsmerkmal mit großem Einfluss auf die Bedienbarkeit."
+    "answer": "**HMI = Human Machine Interface** – die frei gestaltbare **Mensch-Maschine-Schnittstelle** (durch Hersteller oder Endanwender).\n\n- **Visualisierung** der Daten und Kommunikation mit der Maschine.\n- Großes **Alleinstellungsmerkmal** mit großem Einfluss auf die **Bedienbarkeit**."
   },
   {
     "id": "st-008",
@@ -75,7 +75,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Wozu dienen Datenschnittstellen (z. B. DNC) einer CNC-Steuerung?",
-    "answer": "Zum Anschluss der Maschine an Netzwerke für Datenaustausch, zur Anbindung an Cloudsysteme bzw. externe Analyse der Prozessdaten und – über die DNC-Schnittstelle – für Fernsteuerfunktionen. Auch die automatische Werkstück- und Werkzeugerkennung benötigt solche Schnittstellen."
+    "answer": "- **Anschluss an Netzwerke** zum Datenaustausch.\n- Anbindung an **Cloudsysteme** / externe Analyse der Prozessdaten.\n- **DNC-Schnittstelle** für **Fernsteuerfunktionen**.\n- Auch die automatische **Werkstück- und Werkzeugerkennung** benötigt solche Schnittstellen."
   },
   {
     "id": "st-009",
@@ -86,7 +86,7 @@
     "question": "Aus welchen zwei Hauptbestandteilen besteht die Hardware einer CNC-Steuerung?",
     "options": ["Steuerrechner und Maschinensteuerung / I/O-Einheit", "Monitor und Tastatur", "Spindel und Vorschubantrieb", "CAD- und CAM-Modul"],
     "answerIndex": 0,
-    "answer": "Steuerrechner (zentrale Recheneinheit mit CPU, RAM, Speicher) und Maschinensteuerung / I/O-Einheit (verknüpft Steuerrechner mit Sensoren und Aktoren, schaltet Relais, liest Sensorwerte)."
+    "answer": "- **Steuerrechner:** zentrale Recheneinheit (CPU, RAM, Speicher).\n- **Maschinensteuerung / I/O-Einheit:** verknüpft Steuerrechner mit Sensoren und Aktoren, schaltet Relais, liest Sensorwerte."
   },
   {
     "id": "st-010",
@@ -95,7 +95,7 @@
     "priority": "B",
     "type": "open",
     "question": "Was bedeutet Retrofit und welche Bestandteile umfasst es?",
-    "answer": "Retrofit ist die Modernisierung und Nachrüstung einer bestehenden (älteren) Werkzeugmaschine mit aktueller Technik. Bestandteile: Austausch der CNC-Steuerung, Erneuerung von Antrieben/Motoren/Elektronik, Integration neuer Sicherheitsfunktionen, Einbindung in digitale Produktionsumgebungen. Vorteil: geringere Kosten im Vergleich zum Neukauf."
+    "answer": "**Retrofit** = Modernisierung und Nachrüstung einer **bestehenden (älteren) Werkzeugmaschine** mit aktueller Technik.\n\n**Bestandteile:**\n- Austausch der **CNC-Steuerung**\n- Erneuerung von **Antrieben / Motoren / Elektronik**\n- Integration neuer **Sicherheitsfunktionen**\n- Einbindung in **digitale Produktionsumgebungen**\n\n*Vorteil:* **geringere Kosten** als ein Neukauf."
   },
   {
     "id": "st-011",
@@ -106,7 +106,7 @@
     "question": "Welcher Hersteller hat in Deutschland den größten Marktanteil bei CNC-Steuerungen (2023)?",
     "options": ["Siemens", "Heidenhain", "Fanuc", "Mazak"],
     "answerIndex": 0,
-    "answer": "Siemens (vor Heidenhain und Fanuc). In Sachsen liegt Siemens ebenfalls vorn, knapp vor Heidenhain."
+    "answer": "**Siemens** (vor **Heidenhain** und **Fanuc**).\n\nIn Sachsen liegt Siemens ebenfalls vorn, knapp vor Heidenhain."
   },
   {
     "id": "st-012",
@@ -115,7 +115,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Wie heißt die CNC-Steuerung von Siemens und welche Versionen gibt es?",
-    "answer": "Sinumerik. Versionen: Sinumerik 808 (Einstiegsklasse), 828 (Mittelklasse), 840 (High-End-Segment)."
+    "answer": "**Sinumerik.**\n\n- **808** – Einstiegsklasse\n- **828** – Mittelklasse\n- **840** – High-End-Segment"
   },
   {
     "id": "st-013",
@@ -124,7 +124,7 @@
     "priority": "A",
     "type": "open",
     "question": "Erläutern Sie die unterschiedlichen Methoden der NC-Programmierung.",
-    "answer": "Manuelle Programmierung: maschinenspezifisch nach DIN 66025, z. B. am PC mit Texteditor.\nRechnergestützte Programmierung, unterteilt in:\n− maschinennahe Programmierung (WOP): maschinenspezifisch, direkt an/nahe der Maschine,\n− externe Programmierung: maschinenunabhängig über CAD-System → CAM-System → Postprozessor.",
+    "answer": "- **Manuelle Programmierung:** maschinenspezifisch nach **DIN 66025**, z. B. am PC mit Texteditor.\n- **Rechnergestützte Programmierung**, unterteilt in:\n- → **maschinennahe Programmierung (WOP)** – maschinenspezifisch, direkt an/nahe der Maschine\n- → **externe Programmierung** – maschinenunabhängig: **CAD → CAM → Postprozessor**",
     "image": "img/methoden-programmierung.png"
   },
   {
@@ -134,7 +134,7 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wofür steht WOP?",
-    "answer": "Werkstattorientierte Programmierung – die maschinennahe, maschinenspezifische Programmierung direkt in der Werkstatt an bzw. nahe der Maschine."
+    "answer": "**Werkstattorientierte Programmierung** – die **maschinennahe, maschinenspezifische** Programmierung direkt in der Werkstatt an bzw. nahe der Maschine."
   },
   {
     "id": "st-015",
@@ -143,7 +143,7 @@
     "priority": "A",
     "type": "open",
     "question": "Was ist die Klartext-Programmierung (Heidenhain)?",
-    "answer": "Bei der Klartext-Programmierung muss man keine G-Codes kennen. Stattdessen stehen eigene Tasten oder Softkeys zur Verfügung, und die Programmierung erfolgt im Dialog – die Steuerung unterstützt bei der Programmierung. Ideal für Maschinenbediener ohne tiefe G-Code-Kenntnisse."
+    "answer": "Programmierung **ohne Kenntnis von G-Codes**.\n\n- Stattdessen **eigene Tasten oder Softkeys**.\n- Programmierung **im Dialog** – die Steuerung **unterstützt** dabei.\n- Ideal für **Bediener ohne tiefe G-Code-Kenntnisse**."
   },
   {
     "id": "st-016",
@@ -152,7 +152,7 @@
     "priority": "B",
     "type": "open",
     "question": "Skizzieren Sie die prinzipielle Vorgehensweise der werkstattorientierten Programmierung.",
-    "answer": "Das Programm entsteht schrittweise (Satz für Satz): Blockdefinition (Nullpunkt + Rohteil) → Werkzeugwahl → Verfahrbewegung (linear, kreisförmig, freie Kontur) → Zykluswahl → erneute Werkzeugwahl usw. Es erfolgt eine ständige Simulation des Programmfortschritts; ein fertiges/teilfertiges Programm ist einfach korrigierbar."
+    "answer": "Das Programm entsteht **schrittweise (Satz für Satz):**\n\n1. **Blockdefinition** (Nullpunkt + Rohteil)\n2. **Werkzeugwahl**\n3. **Verfahrbewegung** (linear, kreisförmig, freie Kontur)\n4. **Zykluswahl**\n5. erneute Werkzeugwahl usw.\n\n→ **ständige Simulation** des Fortschritts; ein fertiges/teilfertiges Programm ist **einfach korrigierbar**."
   },
   {
     "id": "st-017",
@@ -161,7 +161,7 @@
     "priority": "B",
     "type": "open",
     "question": "Welche Aufgabe hat die Werkzeugverwaltung und woraus besteht sie?",
-    "answer": "Sie sorgt für eine strukturierte, übersichtliche Ablage der Werkzeuge in der Steuerung; sowohl Magazinwerkzeuge als auch montierte/vermessene Werkzeuge werden abgebildet. Bestandteile: Werkzeugliste (Icons + Daten), Werkzeugverschleiß (Standzeit/Stückzahl/Verschleiß, optional Schwesterwerkzeuge), Werkzeugmagazin (Magazinplatzinfos, Werkzeuge umsetzen/positionieren)."
+    "answer": "**Strukturierte, übersichtliche Ablage** der Werkzeuge in der Steuerung (Magazin- **und** vermessene Werkzeuge).\n\n**Bestandteile:**\n- **Werkzeugliste** (Icons + Daten)\n- **Werkzeugverschleiß** (Standzeit / Stückzahl / Verschleiß, optional Schwesterwerkzeuge)\n- **Werkzeugmagazin** (Magazinplatzinfos, Werkzeuge umsetzen/positionieren)"
   },
   {
     "id": "st-018",
@@ -170,6 +170,6 @@
     "priority": "B",
     "type": "open",
     "question": "Erläutern Sie die feste und die variable Werkzeugplatzcodierung.",
-    "answer": "Feste Platzcodierung: Der Werkzeugwechsel erfolgt immer auf einen fest zugewiesenen Magazinplatz; die reale Werkzeugplatzierung muss an das Programm angepasst werden.\nVariable Platzcodierung: Der Wechsel erfolgt auf den nächsten freien, dem Werkzeugwechselpunkt nächstgelegenen Platz. Programmiert wird die Werkzeugnummer; die CNC findet den aktuellen Platz über ihre interne Werkzeugverwaltung."
+    "answer": "- **Feste Platzcodierung:** Wechsel **immer auf einen fest zugewiesenen Magazinplatz**; die reale Platzierung muss **an das Programm angepasst** werden.\n- **Variable Platzcodierung:** Wechsel auf den **nächsten freien Platz** nahe dem Wechselpunkt. Programmiert wird die **Werkzeugnummer**; die CNC findet den aktuellen Platz über ihre **interne Verwaltung**."
   }
 ]
