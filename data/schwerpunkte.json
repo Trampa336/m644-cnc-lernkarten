@@ -1,0 +1,37 @@
+[
+  {
+    "topic": "NC-Programmierung",
+    "rows": [
+      { "subtopic": "Einleitung und Programmaufbau", "a": "Unterscheidung Programmiersysteme", "b": "Programmaufbau", "c": "" },
+      { "subtopic": "Schalt- und Wegbefehle", "a": "Aufgaben Schalt- und Wegbefehle, Unterschied Absolut-/Relativmaßangabe", "b": "", "c": "Nennung von Code mit Funktion" },
+      { "subtopic": "Zyklen", "a": "Grundlegende Erläuterung, Werkzeugkorrekturen", "b": "Erläuterung Schneidenradiuskorrektur Drehen", "c": "Nennung von Zyklus mit Funktion, Beispiele Bohrzyklen" },
+      { "subtopic": "Bezugspunkte", "a": "Koordinatensysteme Drehen und Fräsen, Einzeichnen Bezugspunkte an Beispiel und Unterschiede", "b": "Nullpunktverschiebung, Werkzeugträgerbezugspunkt", "c": "" },
+      { "subtopic": "Praktika", "a": "Aufgabe bei der NC-Code geschrieben werden muss", "b": "", "c": "" }
+    ]
+  },
+  {
+    "topic": "CNC-Steuerungen",
+    "rows": [
+      { "subtopic": "Steuerungsarten und Aufbau", "a": "Aufgaben, Unterschiede Steuerungsarten", "b": "Überblick Aufbau, Erläuterung Retrofit, Datenschnittstellen", "c": "Hardwarekomponenten, HMI, Bedienoberfläche" },
+      { "subtopic": "Anbieter CNC-Steuerungen", "note": "Nicht in dieser Prüfung" },
+      { "subtopic": "Werkstattorientierte Programmierung", "a": "Erläuterung unterschiedlicher Methoden, Klartextprogrammierung", "b": "Erläuterung Werkzeugverwaltung, Arten Werkzeugplatzcodierung", "c": "" }
+    ]
+  },
+  {
+    "topic": "CAM-Systeme",
+    "rows": [
+      { "subtopic": "Einordnung & Prozesskette", "a": "Aufgaben, Prozesskette, Erläuterung Spann-/Technologieplanung", "b": "Unterschiede CAM-CAD-CAE, Postprozessor", "c": "" },
+      { "subtopic": "Fertigungssimulation", "a": "Einsatzfelder, Komponenten", "b": "Arten Werkzeuge", "c": "" },
+      { "subtopic": "CAM-Systeme", "note": "Nicht in dieser Prüfung" },
+      { "subtopic": "Praktika", "a": "Erläuterung der Vorgehensweise bei der CAM-Programmierung", "b": "", "c": "" }
+    ]
+  },
+  {
+    "topic": "Funktionen CNC-Maschine",
+    "rows": [
+      { "subtopic": "Weginformationen", "a": "Lageregelkreis, Positionsmessung", "b": "Erläuterung Abweichungen und Kompensationsmöglichkeiten", "c": "Regelkreis: Antrieb-Messsystem" },
+      { "subtopic": "Schaltinformationen", "a": "Unterschiede Komponenten Werkzeug- und Werkstückwechsel", "b": "Erläuterung adaptive Vorschubregelung und Simultandrehen", "c": "" },
+      { "subtopic": "Betriebsfunktionen", "a": "Grundlegende Erläuterung Achsen sperren, Puffer-Speicher, Schutzbereiche, Kollisionsüberwachung, Zustandsüberwachung", "b": "Erläuterung Fernzugriff, Messzyklen, Arbeitsraumüberwachung", "c": "" }
+    ]
+  }
+]

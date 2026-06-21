@@ -1,4 +1,4 @@
-# M644 CNC – Lernkarten
+# M644 - CNC – Lernkarten
 
 Interaktive Lernkarten (Flashcards) zur Vorbereitung auf die Klausur im **Modul M644 CNC**
 (HTW Dresden, Fak. Maschinenbau – PT, Prof. Jäckel, SS 2026).
@@ -36,6 +36,8 @@ python3 -m http.server 8000
 ```
 
 ### Bedienung
+- Reiter **Lernkarten** / **Schwerpunkte** – Lernkarten zum Üben oder die offizielle Übersicht
+  der Prüfungsschwerpunkte (SS 2026) zum Nachschlagen
 - **Antwort zeigen** / `Leertaste` – Antwort aufdecken
 - `→` – **Sicher** · `←` – **Nicht gewusst**
 - `n` / `p` – nächste / vorherige Karte

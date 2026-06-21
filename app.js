@@ -8,12 +8,15 @@ const DATA_FILES = [
   "data/04-funktionen-cnc-maschine.json",
 ];
 
+const SCHWERPUNKTE_FILE = "data/schwerpunkte.json";
+
 const STORAGE_KEY = "m644-lernkarten-status-v1";
 
 const TYPE_LABEL = { open: "Offen", mc: "Multiple Choice", flashcard: "Karteikarte" };
 const STATUS_LABEL = { sicher: "✓ sicher", nicht: "✗ nicht gewusst" };
 
 let allCards = [];      // alle geladenen Karten
+let schwerpunkte = [];  // offizielle Prüfungsschwerpunkte je Thema
 let deck = [];          // aktuell gefilterte/sortierte Karten
 let index = 0;          // Position im deck
 let revealed = false;   // Antwort sichtbar?
@@ -81,6 +84,16 @@ async function loadAll() {
   allCards = results.flat();
   initTopicFilter();
   applyFilters();
+
+  try {
+    const res = await fetch(SCHWERPUNKTE_FILE);
+    if (!res.ok) throw new Error(res.status);
+    schwerpunkte = await res.json();
+  } catch (e) {
+    console.warn("Konnte " + SCHWERPUNKTE_FILE + " nicht laden:", e);
+    schwerpunkte = [];
+  }
+  renderSchwerpunkte();
 }
 
 function initTopicFilter() {
@@ -251,8 +264,49 @@ function resetProgress() {
   render();
 }
 
+// ---------- Schwerpunkte ----------
+function schwerpunktCol(label, text) {
+  if (!text) return "";
+  return '<div class="sp-col ' + label.toLowerCase() + '">'
+    + '<span class="badge prio ' + label + '">' + label + "-Wissen</span>"
+    + "<p>" + escapeHtml(text) + "</p>"
+    + "</div>";
+}
+
+function renderSchwerpunkte() {
+  const list = document.getElementById("schwerpunkte-list");
+  list.innerHTML = schwerpunkte.map(topic => {
+    const rows = topic.rows.map(row => {
+      if (row.note) {
+        return '<div class="sp-row note"><h4 class="sp-subtopic">' + escapeHtml(row.subtopic) + "</h4>"
+          + '<p class="sp-note">' + escapeHtml(row.note) + "</p></div>";
+      }
+      return '<div class="sp-row"><h4 class="sp-subtopic">' + escapeHtml(row.subtopic) + "</h4>"
+        + schwerpunktCol("A", row.a) + schwerpunktCol("B", row.b) + schwerpunktCol("C", row.c)
+        + "</div>";
+    }).join("");
+    return '<section class="sp-topic"><h3>' + escapeHtml(topic.topic) + "</h3>" + rows + "</section>";
+  }).join("");
+}
+
+// ---------- Tabs ----------
+function setTab(tab) {
+  document.getElementById("view-cards").hidden = tab !== "cards";
+  document.getElementById("view-schwerpunkte").hidden = tab !== "schwerpunkte";
+
+  const btnCards = document.getElementById("tab-btn-cards");
+  const btnSchwerpunkte = document.getElementById("tab-btn-schwerpunkte");
+  btnCards.classList.toggle("active", tab === "cards");
+  btnCards.setAttribute("aria-selected", tab === "cards");
+  btnSchwerpunkte.classList.toggle("active", tab === "schwerpunkte");
+  btnSchwerpunkte.setAttribute("aria-selected", tab === "schwerpunkte");
+}
+
 // ---------- Events ----------
 function bind() {
+  document.getElementById("tab-btn-cards").addEventListener("click", () => setTab("cards"));
+  document.getElementById("tab-btn-schwerpunkte").addEventListener("click", () => setTab("schwerpunkte"));
+
   document.getElementById("filter-topic").addEventListener("change", applyFilters);
   document.getElementById("filter-priority").addEventListener("change", applyFilters);
   document.getElementById("filter-type").addEventListener("change", applyFilters);
@@ -267,6 +321,7 @@ function bind() {
 
   document.addEventListener("keydown", (e) => {
     if (["INPUT", "SELECT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
+    if (document.getElementById("view-cards").hidden) return;
     if (e.code === "Space") { e.preventDefault(); revealed ? null : reveal(); }
     else if (e.key === "ArrowRight") { revealed ? rate("sicher") : reveal(); }
     else if (e.key === "ArrowLeft") { revealed ? rate("nicht") : reveal(); }

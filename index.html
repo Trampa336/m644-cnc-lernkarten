@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M644 CNC – Lernkarten</title>
+  <title>M644 - CNC – Lernkarten</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>M644 CNC – Lernkarten</h1>
+    <h1>M644 - CNC</h1>
     <p class="subtitle">Klausurvorbereitung HTW Dresden · Modul M644 · SS 2026</p>
   </header>
 
+  <nav class="tabs" role="tablist">
+    <button class="tab-btn active" id="tab-btn-cards" type="button" role="tab" aria-selected="true">Lernkarten</button>
+    <button class="tab-btn" id="tab-btn-schwerpunkte" type="button" role="tab" aria-selected="false">Schwerpunkte</button>
+  </nav>
+
+  <div id="view-cards" class="view" role="tabpanel">
   <section class="controls">
     <div class="filters">
       <label>Thema
@@ -94,6 +100,14 @@
   <div id="empty-state" class="empty" hidden>
     <p>Keine Karten für diese Filter. 🎉</p>
     <p class="muted">Passe die Filter an oder setze den Fortschritt zurück.</p>
+  </div>
+  </div>
+
+  <div id="view-schwerpunkte" class="view" role="tabpanel" hidden>
+    <div id="schwerpunkte-list"></div>
+    <p class="sp-disclaimer">⚠️ Diese Schwerpunkte gelten einmalig für die aktuelle Prüfung. Sollten Sie in einem
+    späteren Semester an einer Nach- und Wiederholungsprüfung teilnehmen, erfragen Sie dann eine aktualisierte
+    Version (sofern nicht bereits im OPAL verfügbar).</p>
   </div>
 
   <footer>
