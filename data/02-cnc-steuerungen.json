@@ -143,7 +143,8 @@
     "priority": "A",
     "type": "open",
     "question": "Was ist die Klartext-Programmierung (Heidenhain)?",
-    "answer": "Programmierung **ohne Kenntnis von G-Codes**.\n\n- Stattdessen **eigene Tasten oder Softkeys**.\n- Programmierung **im Dialog** – die Steuerung **unterstützt** dabei.\n- Ideal für **Bediener ohne tiefe G-Code-Kenntnisse**."
+    "answer": "Programmierung **ohne Kenntnis von G-Codes**.\n\n- Stattdessen **eigene Tasten oder Softkeys**.\n- Programmierung **im Dialog** – die Steuerung **unterstützt** dabei.\n- Ideal für **Bediener ohne tiefe G-Code-Kenntnisse**.",
+    "image": "img/klartext-programmierung.png"
   },
   {
     "id": "st-016",
@@ -152,7 +153,8 @@
     "priority": "B",
     "type": "open",
     "question": "Skizzieren Sie die prinzipielle Vorgehensweise der werkstattorientierten Programmierung.",
-    "answer": "Das Programm entsteht **schrittweise (Satz für Satz):**\n\n1. **Blockdefinition** (Nullpunkt + Rohteil)\n2. **Werkzeugwahl**\n3. **Verfahrbewegung** (linear, kreisförmig, freie Kontur)\n4. **Zykluswahl**\n5. erneute Werkzeugwahl usw.\n\n→ **ständige Simulation** des Fortschritts; ein fertiges/teilfertiges Programm ist **einfach korrigierbar**."
+    "answer": "Das Programm entsteht **schrittweise (Satz für Satz):**\n\n1. **Blockdefinition** (Nullpunkt + Rohteil)\n2. **Werkzeugwahl**\n3. **Verfahrbewegung** (linear, kreisförmig, freie Kontur)\n4. **Zykluswahl**\n5. erneute Werkzeugwahl usw.\n\n→ **ständige Simulation** des Fortschritts; ein fertiges/teilfertiges Programm ist **einfach korrigierbar**.",
+    "image": "img/wop-vorgehensweise.png"
   },
   {
     "id": "st-017",
@@ -161,7 +163,8 @@
     "priority": "B",
     "type": "open",
     "question": "Welche Aufgabe hat die Werkzeugverwaltung und woraus besteht sie?",
-    "answer": "**Strukturierte, übersichtliche Ablage** der Werkzeuge in der Steuerung (Magazin- **und** vermessene Werkzeuge).\n\n**Bestandteile:**\n- **Werkzeugliste** (Icons + Daten)\n- **Werkzeugverschleiß** (Standzeit / Stückzahl / Verschleiß, optional Schwesterwerkzeuge)\n- **Werkzeugmagazin** (Magazinplatzinfos, Werkzeuge umsetzen/positionieren)"
+    "answer": "**Strukturierte, übersichtliche Ablage** der Werkzeuge in der Steuerung (Magazin- **und** vermessene Werkzeuge).\n\n**Bestandteile:**\n- **Werkzeugliste** (Icons + Daten)\n- **Werkzeugverschleiß** (Standzeit / Stückzahl / Verschleiß, optional Schwesterwerkzeuge)\n- **Werkzeugmagazin** (Magazinplatzinfos, Werkzeuge umsetzen/positionieren)",
+    "image": "img/werkzeugverwaltung.png"
   },
   {
     "id": "st-018",
@@ -170,6 +173,7 @@
     "priority": "B",
     "type": "open",
     "question": "Erläutern Sie die feste und die variable Werkzeugplatzcodierung.",
-    "answer": "- **Feste Platzcodierung:** Wechsel **immer auf einen fest zugewiesenen Magazinplatz**; die reale Platzierung muss **an das Programm angepasst** werden.\n- **Variable Platzcodierung:** Wechsel auf den **nächsten freien Platz** nahe dem Wechselpunkt. Programmiert wird die **Werkzeugnummer**; die CNC findet den aktuellen Platz über ihre **interne Verwaltung**."
+    "answer": "- **Feste Platzcodierung:** Wechsel **immer auf einen fest zugewiesenen Magazinplatz**; die reale Platzierung muss **an das Programm angepasst** werden.\n- **Variable Platzcodierung:** Wechsel auf den **nächsten freien Platz** nahe dem Wechselpunkt. Programmiert wird die **Werkzeugnummer**; die CNC findet den aktuellen Platz über ihre **interne Verwaltung**.",
+    "image": "img/werkzeugplatzcodierung.png"
   }
 ]

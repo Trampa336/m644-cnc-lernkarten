@@ -45,7 +45,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was umfasst die Spannplanung?",
-    "answer": "Planung/Definition, **wie und womit ein Werkstück gespannt/fixiert** wird:\n\n- Auswahl der **Spannmittel** (Schraubstock, Vakuumplatten, Prismen, Sondervorrichtungen)\n- **Lage und Orientierung** des Werkstücks\n- **Aufspannstrategie** / Anzahl der Spannungen"
+    "answer": "Planung/Definition, **wie und womit ein Werkstück gespannt/fixiert** wird:\n\n- Auswahl der **Spannmittel** (Schraubstock, Vakuumplatten, Prismen, Sondervorrichtungen)\n- **Lage und Orientierung** des Werkstücks\n- **Aufspannstrategie** / Anzahl der Spannungen",
+    "image": "img/spannplanung.png"
   },
   {
     "id": "cam-006",
@@ -54,7 +55,8 @@
     "priority": "A",
     "type": "open",
     "question": "Was beschreibt die Bearbeitungsstrategie in der Technologieplanung?",
-    "answer": "Den Plan, **wie Material vom Rohteil abgetragen** wird – welche Werkzeuge, Bearbeitungsarten und Werkzeugbahnen.\n\n**Bestandteile:**\n1. **Bauteilanalyse** (Rohteil- vs. Fertteilvergleich)\n2. Auswahl des **Fertigungsverfahrens** (Fräsen, Bohren, Drehen, Schleifen)\n3. **Bearbeitungsart** (Schruppen, Schlichten)\n4. Auswahl der **Werkzeugwege**\n5. Festlegen der **Schnittparameter**"
+    "answer": "Den Plan, **wie Material vom Rohteil abgetragen** wird – welche Werkzeuge, Bearbeitungsarten und Werkzeugbahnen.\n\n**Bestandteile:**\n1. **Bauteilanalyse** (Rohteil- vs. Fertteilvergleich)\n2. Auswahl des **Fertigungsverfahrens** (Fräsen, Bohren, Drehen, Schleifen)\n3. **Bearbeitungsart** (Schruppen, Schlichten)\n4. Auswahl der **Werkzeugwege**\n5. Festlegen der **Schnittparameter**",
+    "image": "img/bearbeitungsstrategie.png"
   },
   {
     "id": "cam-007",
@@ -63,7 +65,8 @@
     "priority": "B",
     "type": "open",
     "question": "Was ist ein Postprozessor und welche Aufgaben hat er?",
-    "answer": "Der **Postprozessor** überträgt die Bearbeitung an die Maschine: Er wandelt die **internen Werkzeugbahnen** des CAM-Systems in **maschinenlesbaren NC-Code (z. B. G-Code)** um – angepasst an **Maschine und Steuerung**.\n\n**Aufgaben:**\n- **Übersetzung** der Werkzeugwege\n- **Formatierung** des NC-Programms\n- **maschinenspezifische Anpassungen**\n- Einfügen von **Sicherheitsbefehlen**"
+    "answer": "Der **Postprozessor** überträgt die Bearbeitung an die Maschine: Er wandelt die **internen Werkzeugbahnen** des CAM-Systems in **maschinenlesbaren NC-Code (z. B. G-Code)** um – angepasst an **Maschine und Steuerung**.\n\n**Aufgaben:**\n- **Übersetzung** der Werkzeugwege\n- **Formatierung** des NC-Programms\n- **maschinenspezifische Anpassungen**\n- Einfügen von **Sicherheitsbefehlen**",
+    "image": "img/postprozessor.png"
   },
   {
     "id": "cam-008",
@@ -72,7 +75,8 @@
     "priority": "A",
     "type": "open",
     "question": "Was ist die Hauptaufgabe der CNC-Fertigungssimulation?",
-    "answer": "Den **gesamten Prozess der CNC-Bearbeitung** in einer **3D-Grafikumgebung realitätsgetreu** nachzubilden und zu visualisieren – **bevor** die tatsächliche Bearbeitung stattfindet.\n\n*Ziel:* **Effizienz, Genauigkeit und Sicherheit** verbessern (umfassende virtuelle Umgebung / **digitaler Zwilling**)."
+    "answer": "Den **gesamten Prozess der CNC-Bearbeitung** in einer **3D-Grafikumgebung realitätsgetreu** nachzubilden und zu visualisieren – **bevor** die tatsächliche Bearbeitung stattfindet.\n\n*Ziel:* **Effizienz, Genauigkeit und Sicherheit** verbessern (umfassende virtuelle Umgebung / **digitaler Zwilling**).",
+    "image": "img/fertigungssimulation.png"
   },
   {
     "id": "cam-009",
@@ -110,6 +114,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was prüft die automatische Kollisionserkennung in der Simulation – über Berührungen hinaus?",
-    "answer": "Komponenten des Arbeitsraums werden auf **Kollisionen / Berührungen** geprüft (kollidierende Teile werden **farblich gekennzeichnet**).\n\n**Zusätzlich kontrolliert:**\n- Bearbeitung mit **deaktivierter Kühlmittelzufuhr**\n- Überschreitung **max. zulässiger Spindeldrehzahlen und Vorschübe**"
+    "answer": "Komponenten des Arbeitsraums werden auf **Kollisionen / Berührungen** geprüft (kollidierende Teile werden **farblich gekennzeichnet**).\n\n**Zusätzlich kontrolliert:**\n- Bearbeitung mit **deaktivierter Kühlmittelzufuhr**\n- Überschreitung **max. zulässiger Spindeldrehzahlen und Vorschübe**",
+    "image": "img/kollisionserkennung.png"
   }
 ]

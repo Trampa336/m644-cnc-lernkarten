@@ -55,7 +55,8 @@
     "priority": "B",
     "type": "open",
     "question": "Aus welchen Bausteinen ist ein NC-Programm aufgebaut?",
-    "answer": "- Ein NC-Programm besteht aus **Sätzen**, die den Arbeitsablauf schrittweise beschreiben.\n- Jeder **Satz** entspricht einer **Zeile** und besteht aus **Adressen mit Zahlenwerten**.\n- Sätze werden **fortlaufend nummeriert** (erleichtert Suche, dient als Sprungmarke).\n- Die **Adresse** bestimmt, welche **Funktionsgruppe** der Maschine angesprochen wird."
+    "answer": "- Ein NC-Programm besteht aus **Sätzen**, die den Arbeitsablauf schrittweise beschreiben.\n- Jeder **Satz** entspricht einer **Zeile** und besteht aus **Adressen mit Zahlenwerten**.\n- Sätze werden **fortlaufend nummeriert** (erleichtert Suche, dient als Sprungmarke).\n- Die **Adresse** bestimmt, welche **Funktionsgruppe** der Maschine angesprochen wird.",
+    "image": "img/satzaufbau.png"
   },
   {
     "id": "nc-007",
@@ -122,7 +123,8 @@
     "priority": "A",
     "type": "open",
     "question": "Erklären Sie den Unterschied zwischen Absolut- und Relativmaßangabe und nennen Sie die zugehörigen G-Befehle.",
-    "answer": "- **Absolutmaß (G90):** Entfernung einer Position zum **Programmnullpunkt**.\n- **Relativmaß / Kettenmaß (G91):** **Wegdifferenz** zur vorhergehenden Position.\n\nMit **G90 / G91** lässt sich beliebig umschalten, **ohne den Programmnullpunkt zu verlieren**."
+    "answer": "- **Absolutmaß (G90):** Entfernung einer Position zum **Programmnullpunkt**.\n- **Relativmaß / Kettenmaß (G91):** **Wegdifferenz** zur vorhergehenden Position.\n\nMit **G90 / G91** lässt sich beliebig umschalten, **ohne den Programmnullpunkt zu verlieren**.",
+    "image": "img/absolut-relativmass.png"
   },
   {
     "id": "nc-014",
@@ -160,7 +162,8 @@
     "priority": "A",
     "type": "open",
     "question": "Was sind Zyklen und wozu dienen sie? Nennen Sie Beispiele.",
-    "answer": "**Zyklen** sind für häufig wiederkehrende Arbeitsvorgänge fest **vorprogrammierte Unterprogramme**.\n\nSie **vereinfachen die Programmierung** und **reduzieren die Programmlänge**.\n\n**Beispiele:**\n- **Bohrzyklen:** Bohren, Reiben, Senken, Gewindebohren\n- **Fräszyklen:** Nuten-, Taschenfräsen, Gewindefräsen\n- **Drehzyklen:** Gewindedrehen, Freistiche"
+    "answer": "**Zyklen** sind für häufig wiederkehrende Arbeitsvorgänge fest **vorprogrammierte Unterprogramme**.\n\nSie **vereinfachen die Programmierung** und **reduzieren die Programmlänge**.\n\n**Beispiele:**\n- **Bohrzyklen:** Bohren, Reiben, Senken, Gewindebohren\n- **Fräszyklen:** Nuten-, Taschenfräsen, Gewindefräsen\n- **Drehzyklen:** Gewindedrehen, Freistiche",
+    "image": "img/bohrzyklus.png"
   },
   {
     "id": "nc-018",
@@ -180,7 +183,8 @@
     "priority": "A",
     "type": "open",
     "question": "Was ist die Werkzeugkorrektur und warum ist sie notwendig?",
-    "answer": "Die Werkzeugwege werden abhängig von der **Werkzeuggeometrie** so gesteuert, dass mit **jedem Werkzeug die programmierte Kontur** hergestellt wird.\n\n- Werkzeugdaten müssen im **Werkzeug-Korrekturspeicher** eingetragen sein.\n- Die Steuerung holt sich die Korrekturdaten und korrigiert die **Werkzeugbahn individuell**.\n- Auch zum Ausgleich von **Verschleiß** notwendig."
+    "answer": "Die Werkzeugwege werden abhängig von der **Werkzeuggeometrie** so gesteuert, dass mit **jedem Werkzeug die programmierte Kontur** hergestellt wird.\n\n- Werkzeugdaten müssen im **Werkzeug-Korrekturspeicher** eingetragen sein.\n- Die Steuerung holt sich die Korrekturdaten und korrigiert die **Werkzeugbahn individuell**.\n- Auch zum Ausgleich von **Verschleiß** notwendig.",
+    "image": "img/werkzeugkorrektur-g40-g41.png"
   },
   {
     "id": "nc-020",
@@ -189,7 +193,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was gleicht die Werkzeuglängenkorrektur aus?",
-    "answer": "Die **Längenunterschiede zwischen den eingesetzten Werkzeugen**.\n\n**Werkzeuglänge** = Abstand zwischen **Werkzeugträgerbezugspunkt** und **Werkzeugspitze**."
+    "answer": "Die **Längenunterschiede zwischen den eingesetzten Werkzeugen**.\n\n**Werkzeuglänge** = Abstand zwischen **Werkzeugträgerbezugspunkt** und **Werkzeugspitze**.",
+    "image": "img/werkzeuglaengenkorrektur.png"
   },
   {
     "id": "nc-021",
@@ -198,7 +203,8 @@
     "priority": "A",
     "type": "open",
     "question": "Erläutern Sie die Fräserradiuskorrektur.",
-    "answer": "**Kontur und Werkzeugweg sind nicht identisch:** Der Fräser- bzw. Schneidenmittelpunkt muss auf einer **konturparallelen Bahn (Äquidistante)** fahren.\n\n- **G41** – Fräswerkzeug **links** der Kontur\n- **G42** – Fräswerkzeug **rechts** der Kontur\n- **G40** – Korrektur **aus**"
+    "answer": "**Kontur und Werkzeugweg sind nicht identisch:** Der Fräser- bzw. Schneidenmittelpunkt muss auf einer **konturparallelen Bahn (Äquidistante)** fahren.\n\n- **G41** – Fräswerkzeug **links** der Kontur\n- **G42** – Fräswerkzeug **rechts** der Kontur\n- **G40** – Korrektur **aus**",
+    "image": "img/fraeserradiuskorrektur.png"
   },
   {
     "id": "nc-022",
@@ -218,7 +224,8 @@
     "priority": "B",
     "type": "open",
     "question": "Erläutern Sie die Schneidenradiuskorrektur beim Drehen.",
-    "answer": "Durch den **Schneidenradius (Eckenradius)** am Drehmeißel entstehen ohne Bahnkorrektur **Formfehler / Konturverzerrungen** – besonders bei **Kegel- und Radiendrehen**.\n\n- Wird die Bahn des **Punktes P** programmiert, laufen die formgebenden Tangenten der Schneide **nicht durch P**.\n- Korrektur über eine **Äquidistante** mit automatischem **Übergangskreis**."
+    "answer": "Durch den **Schneidenradius (Eckenradius)** am Drehmeißel entstehen ohne Bahnkorrektur **Formfehler / Konturverzerrungen** – besonders bei **Kegel- und Radiendrehen**.\n\n- Wird die Bahn des **Punktes P** programmiert, laufen die formgebenden Tangenten der Schneide **nicht durch P**.\n- Korrektur über eine **Äquidistante** mit automatischem **Übergangskreis**.",
+    "image": "img/schneidenradiuskorrektur.png"
   },
   {
     "id": "nc-024",
@@ -276,6 +283,7 @@
     "priority": "B",
     "type": "open",
     "question": "Was bewirkt die Nullpunktverschiebung?",
-    "answer": "Die **Differenz zwischen Maschinen- und Werkstücknullpunkt** wird flexibel als Nullpunktverschiebung eingetragen.\n\n- Mit ihrer Aktivierung wird das Koordinatensystem **automatisch an die Werkstückkoordinaten** angepasst.\n- **Erleichtert die Programmerstellung** (keine Maschinenkoordinaten nötig).\n- Bei unterschiedlichen Spannmitteln sind **mehrere Nullpunktverschiebungen** sinnvoll."
+    "answer": "Die **Differenz zwischen Maschinen- und Werkstücknullpunkt** wird flexibel als Nullpunktverschiebung eingetragen.\n\n- Mit ihrer Aktivierung wird das Koordinatensystem **automatisch an die Werkstückkoordinaten** angepasst.\n- **Erleichtert die Programmerstellung** (keine Maschinenkoordinaten nötig).\n- Bei unterschiedlichen Spannmitteln sind **mehrere Nullpunktverschiebungen** sinnvoll.",
+    "image": "img/nullpunktverschiebung.png"
   }
 ]

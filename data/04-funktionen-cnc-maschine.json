@@ -25,7 +25,8 @@
     "priority": "A",
     "type": "open",
     "question": "Erklären Sie den Unterschied zwischen direkter und indirekter Positionsmessung (Closed/Semi-Closed Loop).",
-    "answer": "- **Indirekt (Semi-Closed Loop):** Position aus der **Steigung des Kugelgewindetriebs + Drehgeber**. **Erwärmung beeinflusst** die Messung und damit die Werkstückqualität.\n- **Direkt (Closed Loop):** ein **Längenmessgerät (Längenmaßstab)** erfasst die Schlittenposition **direkt**. **Spiel/Ungenauigkeiten** der Übertragungselemente haben **keinen Einfluss**; Genauigkeit hängt nur vom Messgerät ab."
+    "answer": "- **Indirekt (Semi-Closed Loop):** Position aus der **Steigung des Kugelgewindetriebs + Drehgeber**. **Erwärmung beeinflusst** die Messung und damit die Werkstückqualität.\n- **Direkt (Closed Loop):** ein **Längenmessgerät (Längenmaßstab)** erfasst die Schlittenposition **direkt**. **Spiel/Ungenauigkeiten** der Übertragungselemente haben **keinen Einfluss**; Genauigkeit hängt nur vom Messgerät ab.",
+    "image": "img/positionsmessung.png"
   },
   {
     "id": "fn-004",
@@ -54,7 +55,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was ist die 'Lose' und wie wird sie kompensiert?",
-    "answer": "Die **Lose** ist das **mechanische Umkehrspiel** zwischen einem bewegten Maschinenteil und seinem Antrieb (z. B. Kugelrollspindel).\n\n- **Messung:** pro NC-Achse einen Punkt **aus zwei Richtungen** anfahren.\n- Der **Positionsunterschied** wird in die **Maschinenparameter** eingetragen (Losekompensation)."
+    "answer": "Die **Lose** ist das **mechanische Umkehrspiel** zwischen einem bewegten Maschinenteil und seinem Antrieb (z. B. Kugelrollspindel).\n\n- **Messung:** pro NC-Achse einen Punkt **aus zwei Richtungen** anfahren.\n- Der **Positionsunterschied** wird in die **Maschinenparameter** eingetragen (Losekompensation).",
+    "image": "img/losekompensation.png"
   },
   {
     "id": "fn-007",
@@ -63,7 +65,8 @@
     "priority": "B",
     "type": "open",
     "question": "Was versteht man unter Volumenkompensation (VCS)?",
-    "answer": "Jede Maschine weist **systematische Geometriefehler** im Führungssystem der Vorschubachsen auf (**volumetrischer Fehler**).\n\n- Vermessung z. B. mit **Laser-Interferometer** → Erstellung eines **Kompensationsmodells (VCS-Datei)**.\n- Abweichungen werden durch **angepasste Verfahrwege** am **Tool Center Point (TCP)** korrigiert."
+    "answer": "Jede Maschine weist **systematische Geometriefehler** im Führungssystem der Vorschubachsen auf (**volumetrischer Fehler**).\n\n- Vermessung z. B. mit **Laser-Interferometer** → Erstellung eines **Kompensationsmodells (VCS-Datei)**.\n- Abweichungen werden durch **angepasste Verfahrwege** am **Tool Center Point (TCP)** korrigiert.",
+    "image": "img/volumenkompensation.png"
   },
   {
     "id": "fn-008",
@@ -81,7 +84,8 @@
     "priority": "A",
     "type": "open",
     "question": "Vergleichen Sie den Werkzeugwechsel bei Dreh- und bei Fräsmaschinen.",
-    "answer": "**Drehmaschinen:**\n- meist **wenige Werkzeuge** → **Werkzeugrevolver** (2–3 Revolver, bis 18 Werkzeuge)\n- + keine Wechselgreifer nötig, **kurze Wechselzeiten**, geringe Kollisionsgefahr\n\n**Fräsmaschinen / Bearbeitungszentren:**\n- meist **viele Werkzeuge** → **Werkzeugmagazin + Wechselvorrichtung**\n- Bauformen: **Ketten-, Scheiben- oder Kassettenmagazin** (Scheibe = wenige, Kette = viele Werkzeuge)"
+    "answer": "**Drehmaschinen:**\n- meist **wenige Werkzeuge** → **Werkzeugrevolver** (2–3 Revolver, bis 18 Werkzeuge)\n- + keine Wechselgreifer nötig, **kurze Wechselzeiten**, geringe Kollisionsgefahr\n\n**Fräsmaschinen / Bearbeitungszentren:**\n- meist **viele Werkzeuge** → **Werkzeugmagazin + Wechselvorrichtung**\n- Bauformen: **Ketten-, Scheiben- oder Kassettenmagazin** (Scheibe = wenige, Kette = viele Werkzeuge)",
+    "image": "img/werkzeugwechsel.png"
   },
   {
     "id": "fn-010",
@@ -92,7 +96,8 @@
     "question": "Welches Magazin eignet sich für eine große Werkzeuganzahl?",
     "options": ["Scheibenmagazin", "Kettenmagazin", "Werkzeugrevolver", "Kassette mit einem Platz"],
     "answerIndex": 1,
-    "answer": "Das **Kettenmagazin** – für eine **größere Werkzeuganzahl**.\n\n*Gegenstück:* das **Scheibenmagazin** für eine geringe Anzahl."
+    "answer": "Das **Kettenmagazin** – für eine **größere Werkzeuganzahl**.\n\n*Gegenstück:* das **Scheibenmagazin** für eine geringe Anzahl.",
+    "image": "img/werkzeugmagazine.png"
   },
   {
     "id": "fn-011",
@@ -101,7 +106,8 @@
     "priority": "A",
     "type": "open",
     "question": "Welche Vorteile bietet der automatische Werkstückwechsel und welche Systeme gibt es?",
-    "answer": "*Vorteil:* **Nebenzeiten** für Spannen/Entladen entfallen → **höhere Produktivität** und **Entkopplung vom Werker**.\n\n**Systeme:**\n- Arbeiten **von der Stange**\n- **Pick-up-Verfahren**\n- Wechseln durch **Roboter / Greifer**\n- **Palettenwechsel** (flexible Fertigungszellen/-systeme mit Palettenspeicher)"
+    "answer": "*Vorteil:* **Nebenzeiten** für Spannen/Entladen entfallen → **höhere Produktivität** und **Entkopplung vom Werker**.\n\n**Systeme:**\n- Arbeiten **von der Stange**\n- **Pick-up-Verfahren**\n- Wechseln durch **Roboter / Greifer**\n- **Palettenwechsel** (flexible Fertigungszellen/-systeme mit Palettenspeicher)",
+    "image": "img/werkstueckwechsel.png"
   },
   {
     "id": "fn-012",
@@ -110,7 +116,8 @@
     "priority": "B",
     "type": "open",
     "question": "Was ist die adaptive Vorschubregelung (AFC)?",
-    "answer": "Optimiert den **Bahnvorschub** abhängig von der **Spindelleistung** und weiteren Prozessdaten.\n\n- Vergleicht **permanent** die Spindelleistung mit der **Referenzleistung**.\n- Passt den **Vorschub** laufend an, um die Referenzleistung zu halten.\n\n→ stets **maximal möglicher Vorschub** und **höhere Effizienz**."
+    "answer": "Optimiert den **Bahnvorschub** abhängig von der **Spindelleistung** und weiteren Prozessdaten.\n\n- Vergleicht **permanent** die Spindelleistung mit der **Referenzleistung**.\n- Passt den **Vorschub** laufend an, um die Referenzleistung zu halten.\n\n→ stets **maximal möglicher Vorschub** und **höhere Effizienz**.",
+    "image": "img/adaptive-vorschubregelung.png"
   },
   {
     "id": "fn-013",
@@ -119,7 +126,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was ist Simultandrehen (Balance Cutting)?",
-    "answer": "Ein **CNC-Dreh-Vorgang**, bei dem **zwei Revolver gleichzeitig** zum Einsatz kommen.\n\n**Vorteile:**\n- **geringere Fertigungszeit** (höheres Zerspanvolumen)\n- **geringere Schwingungen** → größere mögliche Werkstücklängen (Schnittkräfte heben sich teilweise auf)"
+    "answer": "Ein **CNC-Dreh-Vorgang**, bei dem **zwei Revolver gleichzeitig** zum Einsatz kommen.\n\n**Vorteile:**\n- **geringere Fertigungszeit** (höheres Zerspanvolumen)\n- **geringere Schwingungen** → größere mögliche Werkstücklängen (Schnittkräfte heben sich teilweise auf)",
+    "image": "img/simultandrehen.png"
   },
   {
     "id": "fn-014",
