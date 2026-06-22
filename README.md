@@ -3,7 +3,7 @@
 Interaktive Lernkarten (Flashcards) zur Vorbereitung auf die Klausur im **Modul M644 CNC**
 (HTW Dresden, Fak. Maschinenbau – PT, Prof. Jäckel, SS 2026).
 
-Jede Karte lässt sich mit **✓ Sicher** oder **✗ Nicht gewusst** bewerten. Der Fortschritt wird
+Jede Karte lässt sich mit **✓ Sicher**, **~ Unsicher** oder **✗ Nicht gewusst** bewerten. Der Fortschritt wird
 im Browser gespeichert (`localStorage`), sodass du gezielt die noch nicht sitzenden Karten
 wiederholen kannst.
 
@@ -37,10 +37,10 @@ python3 -m http.server 8000
 
 ### Bedienung
 - **Antwort zeigen** / `Leertaste` – Antwort aufdecken
-- `→` – **Sicher** · `←` – **Nicht gewusst**
+- `→` – **Sicher** · `↓` – **Unsicher** · `←` – **Nicht gewusst**
 - `n` / `p` – nächste / vorherige Karte
 - Filter nach **Thema**, **Priorität (A/B)** und **Typ**
-- **„Nur nicht gewusst wiederholen“** – drillt nur die offenen/schwachen Karten
+- **„Nur unsicher/nicht gewusst wiederholen“** – drillt nur die offenen/schwachen Karten
 - **Mischen** und **Fortschritt zurücksetzen**
 
 ## Eigene Karten hinzufügen

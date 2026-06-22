@@ -11,7 +11,7 @@ const DATA_FILES = [
 const STORAGE_KEY = "m644-lernkarten-status-v1";
 
 const TYPE_LABEL = { open: "Offen", mc: "Multiple Choice", flashcard: "Karteikarte" };
-const STATUS_LABEL = { sicher: "✓ sicher", nicht: "✗ nicht gewusst" };
+const STATUS_LABEL = { sicher: "✓ sicher", unsicher: "~ unsicher", nicht: "✗ nicht gewusst" };
 
 let allCards = [];      // alle geladenen Karten
 let deck = [];          // aktuell gefilterte/sortierte Karten
@@ -104,7 +104,7 @@ function applyFilters() {
     if (topic !== "all" && c.topic !== topic) return false;
     if (prio !== "all" && c.priority !== prio) return false;
     if (type !== "all" && c.type !== type) return false;
-    if (reviewOnly && status[c.id] === "sicher") return false; // nur offen + nicht gewusst
+    if (reviewOnly && status[c.id] === "sicher") return false; // nur offen + unsicher + nicht gewusst
     return true;
   });
 
@@ -229,17 +229,20 @@ function prev() {
 // ---------- Statistik ----------
 function renderStats() {
   const total = deck.length;
-  let sicher = 0, nicht = 0;
+  let sicher = 0, unsicher = 0, nicht = 0;
   for (const c of deck) {
     if (status[c.id] === "sicher") sicher++;
+    else if (status[c.id] === "unsicher") unsicher++;
     else if (status[c.id] === "nicht") nicht++;
   }
-  const offen = total - sicher - nicht;
+  const offen = total - sicher - unsicher - nicht;
   document.getElementById("count-sicher").textContent = sicher;
+  document.getElementById("count-unsicher").textContent = unsicher;
   document.getElementById("count-nicht").textContent = nicht;
   document.getElementById("count-offen").textContent = offen;
   document.getElementById("count-total").textContent = total + " Karten";
   document.getElementById("bar-sicher").style.width = total ? (sicher / total * 100) + "%" : "0";
+  document.getElementById("bar-unsicher").style.width = total ? (unsicher / total * 100) + "%" : "0";
   document.getElementById("bar-nicht").style.width = total ? (nicht / total * 100) + "%" : "0";
 }
 
@@ -261,6 +264,7 @@ function bind() {
   document.getElementById("btn-reset").addEventListener("click", resetProgress);
   document.getElementById("btn-reveal").addEventListener("click", reveal);
   document.getElementById("btn-sicher").addEventListener("click", () => rate("sicher"));
+  document.getElementById("btn-unsicher").addEventListener("click", () => rate("unsicher"));
   document.getElementById("btn-nicht").addEventListener("click", () => rate("nicht"));
   document.getElementById("btn-next").addEventListener("click", next);
   document.getElementById("btn-prev").addEventListener("click", prev);
@@ -269,6 +273,7 @@ function bind() {
     if (["INPUT", "SELECT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
     if (e.code === "Space") { e.preventDefault(); revealed ? null : reveal(); }
     else if (e.key === "ArrowRight") { revealed ? rate("sicher") : reveal(); }
+    else if (e.key === "ArrowDown") { revealed ? rate("unsicher") : reveal(); }
     else if (e.key === "ArrowLeft") { revealed ? rate("nicht") : reveal(); }
     else if (e.key.toLowerCase() === "n") next();
     else if (e.key.toLowerCase() === "p") prev();
