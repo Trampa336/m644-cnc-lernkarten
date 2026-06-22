@@ -6,6 +6,7 @@
   --muted: #8b98a8;
   --accent: #4aa3ff;
   --sicher: #3fb950;
+  --unsicher: #e3b341;
   --nicht: #f0883e;
   --nicht-strong: #e5534b;
   --border: #2d3845;
@@ -84,12 +85,14 @@ button.ghost:hover { color: var(--text); border-color: var(--accent); }
 }
 .stat-fill { height: 100%; transition: width .3s; }
 .stat-fill.sicher { background: var(--sicher); }
+.stat-fill.unsicher { background: var(--unsicher); }
 .stat-fill.nicht { background: var(--nicht); }
 .stat-numbers {
   display: flex; gap: 16px; flex-wrap: wrap;
   font-size: .85rem; color: var(--muted); margin-top: 8px;
 }
 .s-sicher strong { color: var(--sicher); }
+.s-unsicher strong { color: var(--unsicher); }
 .s-nicht strong { color: var(--nicht); }
 .s-total { margin-left: auto; }
 
@@ -112,6 +115,7 @@ main { margin-top: 18px; }
 .badge.prio.A { color: #04101f; background: var(--accent); border-color: var(--accent); }
 .badge.prio.B { color: var(--text); background: var(--panel-2); }
 .badge.status.sicher { color: var(--sicher); border-color: var(--sicher); }
+.badge.status.unsicher { color: var(--unsicher); border-color: var(--unsicher); }
 .badge.status.nicht { color: var(--nicht); border-color: var(--nicht); }
 
 .card-question { font-size: 1.18rem; font-weight: 600; }
@@ -161,6 +165,7 @@ main { margin-top: 18px; }
 .rate-buttons { display: flex; gap: 12px; width: 100%; max-width: 460px; }
 .rate { flex: 1; padding: 14px; font-size: 1rem; }
 .rate.sicher { background: var(--sicher); color: #04140a; }
+.rate.unsicher { background: var(--unsicher); color: #241c02; }
 .rate.nicht { background: var(--nicht); color: #1f1003; }
 kbd {
   font-size: .68rem; background: rgba(0,0,0,.28); border-radius: 5px;
