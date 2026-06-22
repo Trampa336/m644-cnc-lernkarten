@@ -159,6 +159,7 @@ main { margin-top: 18px; }
   display: block; max-width: 100%; margin-top: 14px;
   border-radius: 10px; background: #fff; padding: 8px;
 }
+#card-answer-img[hidden] { display: none; }
 
 .card-buttons { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; align-items: center; }
 .reveal { width: 100%; max-width: 360px; padding: 13px; font-size: 1rem; }
