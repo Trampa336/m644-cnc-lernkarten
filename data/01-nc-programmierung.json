@@ -6,7 +6,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wofür steht CNC?",
-    "answer": "**Computerized Numerical Control** – computerisierte numerische Steuerung.\n\nBezeichnet die **Automatisierung von Werkzeugmaschinen** mit Hilfe von Computern und programmierbaren Steuerungssystemen."
+    "answer": "**Computerized Numerical Control** – computerisierte numerische Steuerung.\n\nBezeichnet die **Automatisierung von Werkzeugmaschinen** mit Hilfe von Computern und programmierbaren Steuerungssystemen.",
+    "image": "img/einleitung-cnc.png"
   },
   {
     "id": "nc-002",
@@ -15,7 +16,8 @@
     "priority": "A",
     "type": "open",
     "question": "Erläutern Sie die drei Programmiersysteme der NC-Programmierung mit je einem Vor- und Nachteil.",
-    "answer": "1. **Manuelle NC-Programmierung** – direktes Schreiben in G-Code.\n2. **CNC-Steuerung** – maschineninterne Programmierung mit Dialogsystemen.\n3. **CAM-System** – Programmerstellung in CAM-Software.\n\n**Vor- / Nachteile:**\n- Manuell: + volle Kontrolle · − zeitaufwändig und fehleranfällig\n- CNC-Steuerung: + benutzerfreundlich, auch für Einsteiger · − weniger flexibel als G-Code/CAM\n- CAM: + komplexe Geometrien effizient · − teure Software, Schulung nötig"
+    "answer": "1. **Manuelle NC-Programmierung** – direktes Schreiben in G-Code.\n2. **CNC-Steuerung** – maschineninterne Programmierung mit Dialogsystemen.\n3. **CAM-System** – Programmerstellung in CAM-Software.\n\n**Vor- / Nachteile:**\n- Manuell: + volle Kontrolle · − zeitaufwändig und fehleranfällig\n- CNC-Steuerung: + benutzerfreundlich, auch für Einsteiger · − weniger flexibel als G-Code/CAM\n- CAM: + komplexe Geometrien effizient · − teure Software, Schulung nötig",
+    "image": "img/programmiersysteme.png"
   },
   {
     "id": "nc-003",
@@ -26,7 +28,8 @@
     "question": "Welches Programmiersystem eignet sich am besten für komplexe Geometrien?",
     "options": ["Manuelle G-Code-Programmierung", "Dialogprogrammierung an der CNC-Steuerung", "CAM-System", "Teach-in-Verfahren"],
     "answerIndex": 2,
-    "answer": "Das **CAM-System** – komplexe Geometrien können effizient programmiert werden.\n\n*Nachteil:* teure Software und Schulung erforderlich."
+    "answer": "Das **CAM-System** – komplexe Geometrien können effizient programmiert werden.\n\n*Nachteil:* teure Software und Schulung erforderlich.",
+    "image": "img/programmiersysteme.png"
   },
   {
     "id": "nc-004",
@@ -37,7 +40,8 @@
     "question": "Was ist der wesentliche Vorteil der manuellen NC-Programmierung?",
     "options": ["Besonders benutzerfreundlich", "Volle Kontrolle über den Bearbeitungsprozess", "Ideal für komplexe Freiformflächen", "Keine Kenntnisse nötig"],
     "answerIndex": 1,
-    "answer": "**Volle Kontrolle** über den Bearbeitungsprozess.\n\n*Nachteil:* zeitaufwändig und fehleranfällig."
+    "answer": "**Volle Kontrolle** über den Bearbeitungsprozess.\n\n*Nachteil:* zeitaufwändig und fehleranfällig.",
+    "image": "img/programmiersysteme.png"
   },
   {
     "id": "nc-005",
@@ -46,7 +50,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Welche Norm legt Syntax und Aufbau von NC-Programmen fest?",
-    "answer": "**DIN 66025 / ISO 6983**."
+    "answer": "**DIN 66025 / ISO 6983**.",
+    "image": "img/satzaufbau.png"
   },
   {
     "id": "nc-006",
@@ -65,7 +70,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Unterschied zwischen Hauptsatz und Nebensatz?",
-    "answer": "- **Hauptsatz:** enthält **alle Adressen** mit den aktuellen Zahlenwerten.\n- **Nebensatz:** enthält **nur die Informationen, deren Werte sich ändern** (gegenüber dem vorhergehenden Satz)."
+    "answer": "- **Hauptsatz:** enthält **alle Adressen** mit den aktuellen Zahlenwerten.\n- **Nebensatz:** enthält **nur die Informationen, deren Werte sich ändern** (gegenüber dem vorhergehenden Satz).",
+    "image": "img/satzaufbau.png"
   },
   {
     "id": "nc-008",
@@ -74,7 +80,8 @@
     "priority": "A",
     "type": "open",
     "question": "Nennen Sie die Arten von Adressen in einem NC-Programm.",
-    "answer": "- **Weginformationen:** Achsadressen X, Y, Z, A, B, C, W …\n- **Technologische Informationen:** Vorschub (F), Spindeldrehzahl (S), Werkzeug (T)\n- **Schaltfunktionen:** Werkzeugauswahl (T), Schalttischstellungen / Kühlmittel (M)\n- **Fahranweisungen (G):** Bewegungsart, Ebenenauswahl\n- **Korrekturaufrufe:** Werkzeuglängen-/Radiuskorrektur, Nullpunktverschiebung\n- **Zyklen- / Unterprogrammaufrufe:** P, Q"
+    "answer": "- **Weginformationen:** Achsadressen X, Y, Z, A, B, C, W …\n- **Technologische Informationen:** Vorschub (F), Spindeldrehzahl (S), Werkzeug (T)\n- **Schaltfunktionen:** Werkzeugauswahl (T), Schalttischstellungen / Kühlmittel (M)\n- **Fahranweisungen (G):** Bewegungsart, Ebenenauswahl\n- **Korrekturaufrufe:** Werkzeuglängen-/Radiuskorrektur, Nullpunktverschiebung\n- **Zyklen- / Unterprogrammaufrufe:** P, Q",
+    "image": "img/adressen-arten.png"
   },
   {
     "id": "nc-009",
@@ -83,7 +90,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was steuern Schaltbefehle (M-Befehle)?",
-    "answer": "Verschiedene **Maschinenfunktionen**, z. B.:\n- Spindel **starten / stoppen**\n- Kühlung **ein / aus**\n- **Werkzeugwechsel**"
+    "answer": "Verschiedene **Maschinenfunktionen**, z. B.:\n- Spindel **starten / stoppen**\n- Kühlung **ein / aus**\n- **Werkzeugwechsel**",
+    "image": "img/schaltbefehle-m.png"
   },
   {
     "id": "nc-010",
@@ -94,7 +102,8 @@
     "question": "Welche Adresse steht für die Spindeldrehzahl?",
     "options": ["S", "F", "T", "G"],
     "answerIndex": 0,
-    "answer": "**S** (Spindle Speed).\n\n*Zum Vergleich:* F = Vorschub · T = Werkzeugauswahl · G = Wegbedingung."
+    "answer": "**S** (Spindle Speed).\n\n*Zum Vergleich:* F = Vorschub · T = Werkzeugauswahl · G = Wegbedingung.",
+    "image": "img/maschinenbefehle.png"
   },
   {
     "id": "nc-011",
@@ -105,7 +114,8 @@
     "question": "Welche Adresse steht für die Vorschubgeschwindigkeit?",
     "options": ["S", "F", "T", "M"],
     "answerIndex": 1,
-    "answer": "**F** (Vorschub).\n\n*Beispiel:* `G95 F0.15` → 0,15 mm pro Umdrehung."
+    "answer": "**F** (Vorschub).\n\n*Beispiel:* `G95 F0.15` → 0,15 mm pro Umdrehung.",
+    "image": "img/maschinenbefehle.png"
   },
   {
     "id": "nc-012",
@@ -114,7 +124,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wofür steht die Adresse T?",
-    "answer": "Für die **Werkzeugauswahl** (Tool-No).\n\n*Beispiel:* `N140 T17 M06` → Werkzeug 17 in die Spindel wechseln."
+    "answer": "Für die **Werkzeugauswahl** (Tool-No).\n\n*Beispiel:* `N140 T17 M06` → Werkzeug 17 in die Spindel wechseln.",
+    "image": "img/maschinenbefehle.png"
   },
   {
     "id": "nc-013",
@@ -135,7 +146,8 @@
     "question": "Welcher G-Befehl aktiviert die Absolutmaßeingabe?",
     "options": ["G90", "G91", "G40", "G54"],
     "answerIndex": 0,
-    "answer": "**G90** = Absolutmaß.\n\n*Gegenstück:* **G91** = Relativ- / Kettenmaß."
+    "answer": "**G90** = Absolutmaß.\n\n*Gegenstück:* **G91** = Relativ- / Kettenmaß.",
+    "image": "img/absolut-relativmass.png"
   },
   {
     "id": "nc-015",
@@ -144,7 +156,8 @@
     "priority": "B",
     "type": "open",
     "question": "Nennen Sie je einen Vorteil der Absolut- und der Relativmaßprogrammierung.",
-    "answer": "**Absolutmaß:**\n- Nachträgliche Änderung einer Position beeinflusst **nicht alle anderen**.\n- Wiedereintritt in ein unterbrochenes Programm ist **einfacher**.\n\n**Relativmaß:**\n- Summe aller X- bzw. Y-Maße muss bei Rückkehr zur Startposition **Null** sein → einfache **Fehlerkontrolle**.\n- Unterprogramme (Bohrbilder, Einstiche, Fräszyklen) leicht **kopier- und versetzbar**."
+    "answer": "**Absolutmaß:**\n- Nachträgliche Änderung einer Position beeinflusst **nicht alle anderen**.\n- Wiedereintritt in ein unterbrochenes Programm ist **einfacher**.\n\n**Relativmaß:**\n- Summe aller X- bzw. Y-Maße muss bei Rückkehr zur Startposition **Null** sein → einfache **Fehlerkontrolle**.\n- Unterprogramme (Bohrbilder, Einstiche, Fräszyklen) leicht **kopier- und versetzbar**.",
+    "image": "img/absolut-relativmass.png"
   },
   {
     "id": "nc-016",
@@ -153,7 +166,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was legen G-Funktionen (Wegbedingungen) fest?",
-    "answer": "Nach welchem **Rechenprogramm** die Weginformationen verarbeitet werden:\n- **Verfahrart** (Gerade, Kreis)\n- **Wegkorrekturen** (z. B. Werkzeugradius)\n- **Ebenenauswahl**\n- **Definition von Maßen**"
+    "answer": "Nach welchem **Rechenprogramm** die Weginformationen verarbeitet werden:\n- **Verfahrart** (Gerade, Kreis)\n- **Wegkorrekturen** (z. B. Werkzeugradius)\n- **Ebenenauswahl**\n- **Definition von Maßen**",
+    "image": "img/g-funktionen.png"
   },
   {
     "id": "nc-017",
@@ -174,7 +188,8 @@
     "question": "Welcher der folgenden Codes ist ein typischer Bohrzyklus?",
     "options": ["G81", "G90", "G41", "M03"],
     "answerIndex": 0,
-    "answer": "**G81** ist ein typischer Bohrzyklus.\n\n*Zum Vergleich:* G90 = Absolutmaß · G41 = Radiuskorrektur links · M03 = Spindel ein (Rechtslauf)."
+    "answer": "**G81** ist ein typischer Bohrzyklus.\n\n*Zum Vergleich:* G90 = Absolutmaß · G41 = Radiuskorrektur links · M03 = Spindel ein (Rechtslauf).",
+    "image": "img/bohrzyklus.png"
   },
   {
     "id": "nc-019",
@@ -215,7 +230,8 @@
     "question": "Womit wird die Fräserradiuskorrektur 'links von der Kontur' aktiviert?",
     "options": ["G40", "G41", "G42", "G90"],
     "answerIndex": 1,
-    "answer": "**G41** = Fräswerkzeug **links** der Werkstückkontur.\n\n*Gegenstücke:* G42 = rechts · G40 = Korrektur aus."
+    "answer": "**G41** = Fräswerkzeug **links** der Werkstückkontur.\n\n*Gegenstücke:* G42 = rechts · G40 = Korrektur aus.",
+    "image": "img/fraeserradiuskorrektur.png"
   },
   {
     "id": "nc-023",
@@ -244,7 +260,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wo liegt der Maschinennullpunkt (M)?",
-    "answer": "Vom **Maschinenhersteller absolut und unveränderlich** im Ursprung des MKS festgelegt.\n\n- **Drehmaschine:** häufig am Ende der Hauptspindel (**Futteranschlag**)\n- **Fräsmaschine:** an der **linken vorderen Oberseite** des Hauptschlittens"
+    "answer": "Vom **Maschinenhersteller absolut und unveränderlich** im Ursprung des MKS festgelegt.\n\n- **Drehmaschine:** häufig am Ende der Hauptspindel (**Futteranschlag**)\n- **Fräsmaschine:** an der **linken vorderen Oberseite** des Hauptschlittens",
+    "image": "img/bezugspunkte.png"
   },
   {
     "id": "nc-026",
@@ -265,7 +282,8 @@
     "question": "Wer legt den Werkstücknullpunkt fest?",
     "options": ["Der Maschinenhersteller", "Der Programmierer bzw. Maschinenbediener", "Der Steuerungshersteller", "Die Norm DIN 66025"],
     "answerIndex": 1,
-    "answer": "Der **Programmierer bzw. Maschinenbediener**.\n\n*Abgrenzung:* den **Maschinennullpunkt** legt dagegen der **Hersteller** fest."
+    "answer": "Der **Programmierer bzw. Maschinenbediener**.\n\n*Abgrenzung:* den **Maschinennullpunkt** legt dagegen der **Hersteller** fest.",
+    "image": "img/bezugspunkte.png"
   },
   {
     "id": "nc-028",
@@ -274,7 +292,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was ist der Werkzeugträgerbezugspunkt (T)?",
-    "answer": "Ein Punkt an der **Werkzeughalteraufnahme**, wichtig für das Einrichten mit **voreingestellten Werkzeugen**.\n\nDurch Eingabe der **Werkzeuglängen** berechnet die Steuerung den Abstand der Werkzeugspitze zum Werkzeugträgerbezugspunkt → **Längenausgleich**."
+    "answer": "Ein Punkt an der **Werkzeughalteraufnahme**, wichtig für das Einrichten mit **voreingestellten Werkzeugen**.\n\nDurch Eingabe der **Werkzeuglängen** berechnet die Steuerung den Abstand der Werkzeugspitze zum Werkzeugträgerbezugspunkt → **Längenausgleich**.",
+    "image": "img/bezugspunkte.png"
   },
   {
     "id": "nc-029",

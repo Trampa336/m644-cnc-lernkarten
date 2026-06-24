@@ -16,7 +16,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was benötigt jede CNC-Achse aufgrund der Lageregelung?",
-    "answer": "- Ein **elektronisch auswertbares Wegmesssystem** (hohe Genauigkeit und Wiederholgenauigkeit).\n- Einen **steuer- bzw. regelbaren Antrieb** (kleine bewegte Massen, steife Elemente, geringe Reibung/Spiel)."
+    "answer": "- Ein **elektronisch auswertbares Wegmesssystem** (hohe Genauigkeit und Wiederholgenauigkeit).\n- Einen **steuer- bzw. regelbaren Antrieb** (kleine bewegte Massen, steife Elemente, geringe Reibung/Spiel).",
+    "image": "img/lageregelkreis.png"
   },
   {
     "id": "fn-003",
@@ -37,7 +38,8 @@
     "question": "Welche Positionsmessung ist unempfindlich gegenüber Spiel in den Übertragungselementen?",
     "options": ["Semi-Closed Loop (indirekt)", "Closed Loop (direkt)", "Beide gleichermaßen", "Keine von beiden"],
     "answerIndex": 1,
-    "answer": "Die **direkte Positionsmessung (Closed Loop)** mit **Längenmaßstab**.\n\nSpiel und Ungenauigkeiten der Übertragungselemente wirken sich **nicht** auf die Positionserfassung aus."
+    "answer": "Die **direkte Positionsmessung (Closed Loop)** mit **Längenmaßstab**.\n\nSpiel und Ungenauigkeiten der Übertragungselemente wirken sich **nicht** auf die Positionserfassung aus.",
+    "image": "img/positionsmessung.png"
   },
   {
     "id": "fn-005",
@@ -46,7 +48,8 @@
     "priority": "B",
     "type": "open",
     "question": "Nennen Sie Gründe für Positionsabweichungen an CNC-Maschinen.",
-    "answer": "**Auftretende Kräfte** verschieben die Achsposition:\n- **Beschleunigungskräfte**\n- **Schnittkräfte**\n- **Reibungskräfte**\n\n**Erwärmung** (abhängig von Vorspannung der Kugelgewindemutter und Festlager).\n\n*Folgen:* **Gestelldeformationen** und **Achsdrift**."
+    "answer": "**Auftretende Kräfte** verschieben die Achsposition:\n- **Beschleunigungskräfte**\n- **Schnittkräfte**\n- **Reibungskräfte**\n\n**Erwärmung** (abhängig von Vorspannung der Kugelgewindemutter und Festlager).\n\n*Folgen:* **Gestelldeformationen** und **Achsdrift**.",
+    "image": "img/positionsabweichungen.png"
   },
   {
     "id": "fn-006",
@@ -75,7 +78,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was sind Schaltfunktionen (M)?",
-    "answer": "Alle Funktionen der Maschine, die während der Bearbeitung **programmierbar ein-/ausgeschaltet** werden (z. B. **Kühlmittel, Spindel**).\n\nErgänzen die **Weginformationen** (Bewegungen) und die **technologischen Daten** (T, D, S, F) für einen vollautomatischen Ablauf."
+    "answer": "Alle Funktionen der Maschine, die während der Bearbeitung **programmierbar ein-/ausgeschaltet** werden (z. B. **Kühlmittel, Spindel**).\n\nErgänzen die **Weginformationen** (Bewegungen) und die **technologischen Daten** (T, D, S, F) für einen vollautomatischen Ablauf.",
+    "image": "img/schaltfunktionen.png"
   },
   {
     "id": "fn-009",
@@ -136,7 +140,8 @@
     "priority": "A",
     "type": "open",
     "question": "Wozu dient die Betriebsfunktion 'Achsen sperren'?",
-    "answer": "Zum **gezielten Stillsetzen** einzelner/aller CNC-Achsen, um ein NC-Programm **ohne Bewegung** dieser Achsen im **Schnelldurchlauf auf Programmfehler zu testen**.\n\nWahlweise und zur Zeitersparnis auch **Werkzeugwechsel, Palettenwechsel, Kühlmittel und Hauptspindel** sperrbar."
+    "answer": "Zum **gezielten Stillsetzen** einzelner/aller CNC-Achsen, um ein NC-Programm **ohne Bewegung** dieser Achsen im **Schnelldurchlauf auf Programmfehler zu testen**.\n\nWahlweise und zur Zeitersparnis auch **Werkzeugwechsel, Palettenwechsel, Kühlmittel und Hauptspindel** sperrbar.",
+    "image": "img/achsen-sperren.png"
   },
   {
     "id": "fn-015",
@@ -155,7 +160,8 @@
     "priority": "A",
     "type": "open",
     "question": "Was leistet die dynamische Kollisionsüberwachung?",
-    "answer": "- Bildet **reale Maschinenobjekte** in der **Software der Steuerung** ab.\n- Überwacht auf dieser Basis die Bearbeitung **laufend auf mögliche Kollisionen**.\n- Verhindert **Schäden an Maschine, Werkzeug und Bauteil**.\n\n*Notwendig,* weil sich Kollisionen **nicht immer vollständig in der CAM-Software** verhindern lassen."
+    "answer": "- Bildet **reale Maschinenobjekte** in der **Software der Steuerung** ab.\n- Überwacht auf dieser Basis die Bearbeitung **laufend auf mögliche Kollisionen**.\n- Verhindert **Schäden an Maschine, Werkzeug und Bauteil**.\n\n*Notwendig,* weil sich Kollisionen **nicht immer vollständig in der CAM-Software** verhindern lassen.",
+    "image": "img/kollisionsueberwachung.png"
   },
   {
     "id": "fn-017",
@@ -164,7 +170,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wozu dient der dynamische Daten-Puffer-Speicher?",
-    "answer": "Für **hohe Oberflächenqualität** muss die Maschine das Programm **schnell und ohne Vorschubschwankungen** abarbeiten.\n\n- Ist die **Abarbeitungszeit** eines Satzes kürzer als die **Vorbereitungszeit** des folgenden, kommt es zu **Vorschubeinbrüchen**.\n- Ein ständig nachgefüllter **Pufferspeicher** hält genügend **vorbereitete NC-Sätze** bereit → verhindert das ruckelnde **„Achsen-Stottern“**."
+    "answer": "Für **hohe Oberflächenqualität** muss die Maschine das Programm **schnell und ohne Vorschubschwankungen** abarbeiten.\n\n- Ist die **Abarbeitungszeit** eines Satzes kürzer als die **Vorbereitungszeit** des folgenden, kommt es zu **Vorschubeinbrüchen**.\n- Ein ständig nachgefüllter **Pufferspeicher** hält genügend **vorbereitete NC-Sätze** bereit → verhindert das ruckelnde **„Achsen-Stottern“**.",
+    "image": "img/puffer-speicher.png"
   },
   {
     "id": "fn-018",
@@ -173,7 +180,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was bedeutet Zustandsüberwachung (Condition Monitoring)?",
-    "answer": "**Überwachung und Analyse** eines **lastabhängigen Störungs- und Zustands** der CNC-Maschine.\n\n- **Permanenter Vergleich** mit Sollgrößen → frühestmögliche Kenntnis über Abweichungen.\n- **Intelligente Auswertung** der Sensordaten → **Prognose von Ausfällen**."
+    "answer": "**Überwachung und Analyse** eines **lastabhängigen Störungs- und Zustands** der CNC-Maschine.\n\n- **Permanenter Vergleich** mit Sollgrößen → frühestmögliche Kenntnis über Abweichungen.\n- **Intelligente Auswertung** der Sensordaten → **Prognose von Ausfällen**.",
+    "image": "img/zustandsueberwachung.png"
   },
   {
     "id": "fn-019",
@@ -182,7 +190,8 @@
     "priority": "B",
     "type": "open",
     "question": "Was sind Messzyklen und wozu werden sie verwendet?",
-    "answer": "In der CNC abgespeicherte **Ablaufzyklen zum automatischen Messen** von Bohrungen, Nuten oder Flächen mit einem **schaltenden Messtaster**.\n\n- Prüft **während der Abarbeitung** die **Genauigkeit des Werkstücks**.\n- **Korrektur** im NC-Programm oder für das Werkzeug möglich.\n- Erfordert spezielle **Kalibrier- und Messzyklen**."
+    "answer": "In der CNC abgespeicherte **Ablaufzyklen zum automatischen Messen** von Bohrungen, Nuten oder Flächen mit einem **schaltenden Messtaster**.\n\n- Prüft **während der Abarbeitung** die **Genauigkeit des Werkstücks**.\n- **Korrektur** im NC-Programm oder für das Werkzeug möglich.\n- Erfordert spezielle **Kalibrier- und Messzyklen**.",
+    "image": "img/messzyklen.png"
   },
   {
     "id": "fn-020",
@@ -191,6 +200,7 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Welche Möglichkeiten bietet der Fernzugriff auf eine CNC-Maschine?",
-    "answer": "- **Fernbedienen und Beobachten** des Maschinen-HMI\n- **Übertragen von Dateien**\n- **Konferenzschaltung** (mehrere Service-Techniker)\n- **dokumentarischer Nachweis** der Aktionen"
+    "answer": "- **Fernbedienen und Beobachten** des Maschinen-HMI\n- **Übertragen von Dateien**\n- **Konferenzschaltung** (mehrere Service-Techniker)\n- **dokumentarischer Nachweis** der Aktionen",
+    "image": "img/fernzugriff.png"
   }
 ]

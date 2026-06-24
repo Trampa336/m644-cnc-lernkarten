@@ -6,7 +6,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Was ist die Aufgabe einer CNC-Steuerung?",
-    "answer": "Das **Computersystem, das die Werkzeugmaschine steuert.**\n\n**Aufgaben:**\n- digitale **Informationen** an die Maschine übertragen\n- alle **Fertigungsschritte** steuern\n- **Maschinen-/Werkzeugdaten** und Programme speichern\n- **grafische Simulation** der Fertigungsabläufe"
+    "answer": "Das **Computersystem, das die Werkzeugmaschine steuert.**\n\n**Aufgaben:**\n- digitale **Informationen** an die Maschine übertragen\n- alle **Fertigungsschritte** steuern\n- **Maschinen-/Werkzeugdaten** und Programme speichern\n- **grafische Simulation** der Fertigungsabläufe",
+    "image": "img/einordnung-aufgaben.png"
   },
   {
     "id": "st-002",
@@ -27,7 +28,8 @@
     "question": "Welche Steuerungsart ist typisch für Bohrmaschinen?",
     "options": ["Punktsteuerung", "Streckensteuerung", "Bahnsteuerung", "Adaptivsteuerung"],
     "answerIndex": 0,
-    "answer": "**Punktsteuerung** – nur Start- und Endpunkt sind relevant, das Werkzeug ist während der Bewegung **nicht im Eingriff**."
+    "answer": "**Punktsteuerung** – nur Start- und Endpunkt sind relevant, das Werkzeug ist während der Bewegung **nicht im Eingriff**.",
+    "image": "img/steuerungsarten.png"
   },
   {
     "id": "st-004",
@@ -38,7 +40,8 @@
     "question": "Welche Steuerungsart ist für die Bearbeitung von Freiformflächen erforderlich?",
     "options": ["Punktsteuerung", "Streckensteuerung", "Bahnsteuerung", "Keine, das geht mit allen"],
     "answerIndex": 2,
-    "answer": "**Bahnsteuerung** – nur sie erlaubt die **gleichzeitige Bewegung mehrerer Achsen** und damit kontinuierliche Konturen / Freiformflächen."
+    "answer": "**Bahnsteuerung** – nur sie erlaubt die **gleichzeitige Bewegung mehrerer Achsen** und damit kontinuierliche Konturen / Freiformflächen.",
+    "image": "img/steuerungsarten.png"
   },
   {
     "id": "st-005",
@@ -47,7 +50,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was kennzeichnet eine Adaptivsteuerung (Adaptive Control)?",
-    "answer": "Eine **intelligente Steuerung, die sich an die Bearbeitungsbedingungen anpasst.**\n\n- **Sensoren** messen z. B. **Schnittkraft** oder **Temperatur** → Vorschub wird angepasst.\n- Einsatz bei **Hochleistungszerspanung**.\n- + Prozesssicherheit / Werkzeugschutz · − komplex, teuer, Sensorik nötig"
+    "answer": "Eine **intelligente Steuerung, die sich an die Bearbeitungsbedingungen anpasst.**\n\n- **Sensoren** messen z. B. **Schnittkraft** oder **Temperatur** → Vorschub wird angepasst.\n- Einsatz bei **Hochleistungszerspanung**.\n- + Prozesssicherheit / Werkzeugschutz · − komplex, teuer, Sensorik nötig",
+    "image": "img/adaptivsteuerung.png"
   },
   {
     "id": "st-006",
@@ -66,7 +70,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Was versteht man unter HMI bei einer CNC-Steuerung?",
-    "answer": "**HMI = Human Machine Interface** – die frei gestaltbare **Mensch-Maschine-Schnittstelle** (durch Hersteller oder Endanwender).\n\n- **Visualisierung** der Daten und Kommunikation mit der Maschine.\n- Großes **Alleinstellungsmerkmal** mit großem Einfluss auf die **Bedienbarkeit**."
+    "answer": "**HMI = Human Machine Interface** – die frei gestaltbare **Mensch-Maschine-Schnittstelle** (durch Hersteller oder Endanwender).\n\n- **Visualisierung** der Daten und Kommunikation mit der Maschine.\n- Großes **Alleinstellungsmerkmal** mit großem Einfluss auf die **Bedienbarkeit**.",
+    "image": "img/hmi.png"
   },
   {
     "id": "st-008",
@@ -75,7 +80,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Wozu dienen Datenschnittstellen (z. B. DNC) einer CNC-Steuerung?",
-    "answer": "- **Anschluss an Netzwerke** zum Datenaustausch.\n- Anbindung an **Cloudsysteme** / externe Analyse der Prozessdaten.\n- **DNC-Schnittstelle** für **Fernsteuerfunktionen**.\n- Auch die automatische **Werkstück- und Werkzeugerkennung** benötigt solche Schnittstellen."
+    "answer": "- **Anschluss an Netzwerke** zum Datenaustausch.\n- Anbindung an **Cloudsysteme** / externe Analyse der Prozessdaten.\n- **DNC-Schnittstelle** für **Fernsteuerfunktionen**.\n- Auch die automatische **Werkstück- und Werkzeugerkennung** benötigt solche Schnittstellen.",
+    "image": "img/datenschnittstellen.png"
   },
   {
     "id": "st-009",
@@ -86,7 +92,8 @@
     "question": "Aus welchen zwei Hauptbestandteilen besteht die Hardware einer CNC-Steuerung?",
     "options": ["Steuerrechner und Maschinensteuerung / I/O-Einheit", "Monitor und Tastatur", "Spindel und Vorschubantrieb", "CAD- und CAM-Modul"],
     "answerIndex": 0,
-    "answer": "- **Steuerrechner:** zentrale Recheneinheit (CPU, RAM, Speicher).\n- **Maschinensteuerung / I/O-Einheit:** verknüpft Steuerrechner mit Sensoren und Aktoren, schaltet Relais, liest Sensorwerte."
+    "answer": "- **Steuerrechner:** zentrale Recheneinheit (CPU, RAM, Speicher).\n- **Maschinensteuerung / I/O-Einheit:** verknüpft Steuerrechner mit Sensoren und Aktoren, schaltet Relais, liest Sensorwerte.",
+    "image": "img/hardwarekomponenten.png"
   },
   {
     "id": "st-010",
@@ -95,7 +102,8 @@
     "priority": "B",
     "type": "open",
     "question": "Was bedeutet Retrofit und welche Bestandteile umfasst es?",
-    "answer": "**Retrofit** = Modernisierung und Nachrüstung einer **bestehenden (älteren) Werkzeugmaschine** mit aktueller Technik.\n\n**Bestandteile:**\n- Austausch der **CNC-Steuerung**\n- Erneuerung von **Antrieben / Motoren / Elektronik**\n- Integration neuer **Sicherheitsfunktionen**\n- Einbindung in **digitale Produktionsumgebungen**\n\n*Vorteil:* **geringere Kosten** als ein Neukauf."
+    "answer": "**Retrofit** = Modernisierung und Nachrüstung einer **bestehenden (älteren) Werkzeugmaschine** mit aktueller Technik.\n\n**Bestandteile:**\n- Austausch der **CNC-Steuerung**\n- Erneuerung von **Antrieben / Motoren / Elektronik**\n- Integration neuer **Sicherheitsfunktionen**\n- Einbindung in **digitale Produktionsumgebungen**\n\n*Vorteil:* **geringere Kosten** als ein Neukauf.",
+    "image": "img/retrofit.png"
   },
   {
     "id": "st-011",
@@ -106,7 +114,8 @@
     "question": "Welcher Hersteller hat in Deutschland den größten Marktanteil bei CNC-Steuerungen (2023)?",
     "options": ["Siemens", "Heidenhain", "Fanuc", "Mazak"],
     "answerIndex": 0,
-    "answer": "**Siemens** (vor **Heidenhain** und **Fanuc**).\n\nIn Sachsen liegt Siemens ebenfalls vorn, knapp vor Heidenhain."
+    "answer": "**Siemens** (vor **Heidenhain** und **Fanuc**).\n\nIn Sachsen liegt Siemens ebenfalls vorn, knapp vor Heidenhain.",
+    "image": "img/anbieter-marktanteil.png"
   },
   {
     "id": "st-012",
@@ -115,7 +124,8 @@
     "priority": "B",
     "type": "flashcard",
     "question": "Wie heißt die CNC-Steuerung von Siemens und welche Versionen gibt es?",
-    "answer": "**Sinumerik.**\n\n- **808** – Einstiegsklasse\n- **828** – Mittelklasse\n- **840** – High-End-Segment"
+    "answer": "**Sinumerik.**\n\n- **808** – Einstiegsklasse\n- **828** – Mittelklasse\n- **840** – High-End-Segment",
+    "image": "img/sinumerik.png"
   },
   {
     "id": "st-013",
@@ -134,7 +144,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wofür steht WOP?",
-    "answer": "**Werkstattorientierte Programmierung** – die **maschinennahe, maschinenspezifische** Programmierung direkt in der Werkstatt an bzw. nahe der Maschine."
+    "answer": "**Werkstattorientierte Programmierung** – die **maschinennahe, maschinenspezifische** Programmierung direkt in der Werkstatt an bzw. nahe der Maschine.",
+    "image": "img/methoden-programmierung.png"
   },
   {
     "id": "st-015",

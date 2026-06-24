@@ -6,7 +6,8 @@
     "priority": "A",
     "type": "flashcard",
     "question": "Wofür steht CAM?",
-    "answer": "**Computer-Aided Manufacturing** – computerunterstützte Fertigung.\n\nAnwendung von Software, um den **Fertigungsprozess** von Werkstücken zu **automatisieren und zu optimieren** (von der Konstruktionsbeschreibung bis zur Fertigung)."
+    "answer": "**Computer-Aided Manufacturing** – computerunterstützte Fertigung.\n\nAnwendung von Software, um den **Fertigungsprozess** von Werkstücken zu **automatisieren und zu optimieren** (von der Konstruktionsbeschreibung bis zur Fertigung).",
+    "image": "img/erlaeuterung-cam.png"
   },
   {
     "id": "cam-002",
@@ -15,7 +16,8 @@
     "priority": "A",
     "type": "open",
     "question": "Erklären Sie den Unterschied zwischen CAD und CAE.",
-    "answer": "- **CAD (Computer-Aided Design):** Erstellen, Bearbeiten und Dokumentieren **geometrischer Modelle** eines Bauteils / einer Baugruppe.\n- **CAE (Computer-Aided Engineering):** **Analyse und Simulation** von (meist aus CAD stammenden) Modellen, um das **Produktverhalten vor der Fertigung** zu testen."
+    "answer": "- **CAD (Computer-Aided Design):** Erstellen, Bearbeiten und Dokumentieren **geometrischer Modelle** eines Bauteils / einer Baugruppe.\n- **CAE (Computer-Aided Engineering):** **Analyse und Simulation** von (meist aus CAD stammenden) Modellen, um das **Produktverhalten vor der Fertigung** zu testen.",
+    "image": "img/cad-cae.png"
   },
   {
     "id": "cam-003",
@@ -26,7 +28,8 @@
     "question": "Was ist eine zentrale Aufgabe eines CAM-Systems?",
     "options": ["Geometrische Modellierung des Bauteils", "Generierung des NC-Programms aus dem CAD-Modell", "Belastungsanalyse mittels FEM", "Verwaltung aller Produktdaten im Lebenszyklus"],
     "answerIndex": 1,
-    "answer": "Die **Generierung des NC-Programms aus dem CAD-Modell.**\n\n**Weitere Aufgaben:**\n- Optimierung der **Bearbeitungsstrategien**\n- Minimierung von **Programmier- / Rüstzeiten**\n- **Simulation** der Verfahrwege und **Kollisionsprüfung**\n- Organisation der **Werkzeug- und NC-Daten**"
+    "answer": "Die **Generierung des NC-Programms aus dem CAD-Modell.**\n\n**Weitere Aufgaben:**\n- Optimierung der **Bearbeitungsstrategien**\n- Minimierung von **Programmier- / Rüstzeiten**\n- **Simulation** der Verfahrwege und **Kollisionsprüfung**\n- Organisation der **Werkzeug- und NC-Daten**",
+    "image": "img/cam-prozesskette.png"
   },
   {
     "id": "cam-004",
@@ -85,7 +88,8 @@
     "priority": "A",
     "type": "open",
     "question": "Nennen Sie Einsatzfelder der Fertigungssimulation.",
-    "answer": "- **Verifizierung** von CNC-Programmen (Konturen)\n- **Vermeidung von Kollisionen** (Werkzeug, Werkstück, Maschinenkomponenten)\n- **Optimierung von Werkzeugwegen** (Taktzeitreduzierung)\n- Überprüfung von **Maschinenkapazitäten** (räumliche Einschränkungen)\n- **Schulung und Ausbildung** der Bediener"
+    "answer": "- **Verifizierung** von CNC-Programmen (Konturen)\n- **Vermeidung von Kollisionen** (Werkzeug, Werkstück, Maschinenkomponenten)\n- **Optimierung von Werkzeugwegen** (Taktzeitreduzierung)\n- Überprüfung von **Maschinenkapazitäten** (räumliche Einschränkungen)\n- **Schulung und Ausbildung** der Bediener",
+    "image": "img/einsatzfelder-simulation.png"
   },
   {
     "id": "cam-010",
@@ -94,7 +98,8 @@
     "priority": "B",
     "type": "open",
     "question": "In welche Klassen werden Werkzeuge in der Fertigungssimulation eingeteilt?",
-    "answer": "- **Rotationssymmetrische** Werkzeuge (Bohrer, Fräser)\n- **Nicht-rotationssymmetrische** Werkzeuge (Drehwerkzeuge, einschneidige)\n- **Kombinierte / Sonderwerkzeuge** (Winkelbohrköpfe, Bohrköpfe mit mehreren Werkzeugen)\n\nWerkzeuge können **generiert** (geometrische Parameter) oder **zusammengesetzt** (3D-Geometrien) werden."
+    "answer": "- **Rotationssymmetrische** Werkzeuge (Bohrer, Fräser)\n- **Nicht-rotationssymmetrische** Werkzeuge (Drehwerkzeuge, einschneidige)\n- **Kombinierte / Sonderwerkzeuge** (Winkelbohrköpfe, Bohrköpfe mit mehreren Werkzeugen)\n\nWerkzeuge können **generiert** (geometrische Parameter) oder **zusammengesetzt** (3D-Geometrien) werden.",
+    "image": "img/simulation-werkzeuge.png"
   },
   {
     "id": "cam-011",
@@ -105,7 +110,8 @@
     "question": "Welche zwei Arten der Werkzeugerstellung gibt es in der Simulation?",
     "options": ["Generierte und zusammengesetzte Werkzeuge", "Feste und variable Werkzeuge", "Direkte und indirekte Werkzeuge", "2D- und 3D-Werkzeuge"],
     "answerIndex": 0,
-    "answer": "- **Generierte Werkzeuge:** über geometrische Parameter erzeugt, **kein CAD-Wissen** nötig.\n- **Zusammengesetzte Werkzeuge:** aus 3D-Geometrien der Hersteller, **exakte Abbildung**, aber hoher Pflegeaufwand."
+    "answer": "- **Generierte Werkzeuge:** über geometrische Parameter erzeugt, **kein CAD-Wissen** nötig.\n- **Zusammengesetzte Werkzeuge:** aus 3D-Geometrien der Hersteller, **exakte Abbildung**, aber hoher Pflegeaufwand.",
+    "image": "img/simulation-werkzeuge.png"
   },
   {
     "id": "cam-012",
